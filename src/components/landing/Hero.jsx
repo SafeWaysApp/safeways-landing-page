@@ -84,7 +84,7 @@ export default function Hero() {
             {/* Safety Portal Link */}
             <div className="mt-6">
               <a 
-                href="https://safeways.io" 
+                href="https://app.safeways.io" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 text-white hover:text-purple-100 transition-all group"
