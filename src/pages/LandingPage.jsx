@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../components/landing/Hero';
 import Features from '../components/landing/Features';
-import Team from '../components/landing/Team';
+// import Team from '../components/landing/Team';
 import BlogPreview from '../components/landing/BlogPreview';
 import Footer from '../components/landing/Footer';
 
@@ -10,7 +10,7 @@ export default function LandingPage() {
     <div className="min-h-screen bg-white">
       <Hero />
       <Features />
-      <Team />
+      {/* <Team /> */}
       <BlogPreview />
       <Footer />
     </div>
