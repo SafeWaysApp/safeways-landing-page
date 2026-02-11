@@ -80,21 +80,13 @@ export default function Blog() {
       {/* Header */}
       <div className="bg-gradient-to-br from-purple-900 via-purple-800 to-orange-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="flex items-center justify-between mb-8">
-            <Link 
-              to={createPageUrl('LandingPage')}
-              className="inline-flex items-center gap-2 text-purple-100 hover:text-white transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Home
-            </Link>
-            <a
-              href="/login"
-              className="px-6 py-2 bg-white/10 backdrop-blur-sm text-white rounded-full font-semibold hover:bg-white/20 transition-all border border-white/20"
-            >
-              Admin Login
-            </a>
-          </div>
+          <Link 
+            to={createPageUrl('LandingPage')}
+            className="inline-flex items-center gap-2 text-purple-100 hover:text-white mb-8 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Home
+          </Link>
           
           <h1 className="text-5xl sm:text-6xl font-black mb-4">
             SafeWays Blog

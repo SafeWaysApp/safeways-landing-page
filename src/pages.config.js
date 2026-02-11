@@ -47,21 +47,21 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
+import Blog from './pages/Blog';
+import blogTsx from './pages/Blog.tsx';
+import BlogPost from './pages/BlogPost';
 import LandingPage from './pages/LandingPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
-import blogTsx from './pages/Blog.tsx';
-import Blog from './pages/Blog';
-import BlogPost from './pages/BlogPost';
 
 
 export const PAGES = {
+    "Blog": Blog,
+    "Blog.tsx": blogTsx,
+    "BlogPost": BlogPost,
     "LandingPage": LandingPage,
     "PrivacyPolicy": PrivacyPolicy,
     "TermsOfService": TermsOfService,
-    "Blog.tsx": blogTsx,
-    "Blog": Blog,
-    "BlogPost": BlogPost,
 }
 
 export const pagesConfig = {
