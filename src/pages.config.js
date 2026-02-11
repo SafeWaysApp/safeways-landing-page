@@ -50,12 +50,16 @@
 import LandingPage from './pages/LandingPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import Blog from './pages/Blog';
+import blogTsx from './pages/Blog.tsx';
 
 
 export const PAGES = {
     "LandingPage": LandingPage,
     "PrivacyPolicy": PrivacyPolicy,
     "TermsOfService": TermsOfService,
+    "Blog": Blog,
+    "Blog.tsx": blogTsx,
 }
 
 export const pagesConfig = {
