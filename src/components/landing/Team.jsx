@@ -45,7 +45,7 @@ export default function Team() {
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-full rounded-full object-cover border-4 border-white"
+                    className={`w-full h-full rounded-full object-cover border-4 border-white ${member.name === 'Piotr Buda' ? 'object-[center_20%]' : ''}`}
                   />
                 </div>
               </div>
