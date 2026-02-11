@@ -1,4 +1,5 @@
 import React from 'react';
+import { base44 } from '@/api/base44Client';
 
 export default function Hero() {
   return (
@@ -87,6 +88,7 @@ export default function Hero() {
                 href="https://app.safeways.io" 
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => base44.analytics.track({ eventName: 'safety_portal_button_clicked' })}
                 className="inline-flex items-center justify-center gap-2 text-white hover:text-purple-100 transition-all group"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
