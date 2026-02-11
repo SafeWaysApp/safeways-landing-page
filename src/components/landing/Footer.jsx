@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_69415c608ad3b0308b28a1f5/f643f91ce_SafeWays_Logo_v1.jpg" 
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698bc57975eb60d9d1b511a2/2ba989b2d_safeway_logo_512.png" 
               alt="SafeWays Logo" 
               className="h-12 w-auto mb-6"
             />
