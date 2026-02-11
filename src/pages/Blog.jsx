@@ -7,58 +7,58 @@ import { Input } from '@/components/ui/input';
 
 const blogPosts = [
   {
+    id: 'crime-statistics',
     title: 'Understanding Crime Statistics in Your Neighborhood',
     excerpt: 'Learn how to interpret local crime data and what it means for your daily safety decisions.',
     category: 'Safety Tips',
     date: 'Feb 8, 2026',
     readTime: '5 min read',
-    image: '🔍',
-    content: 'Detailed analysis of crime statistics and how to use them effectively...'
+    image: '🔍'
   },
   {
+    id: 'urban-safety-habits',
     title: '10 Essential Safety Habits for Urban Living',
     excerpt: 'Practical tips for staying safe in busy city environments, from public transit to late-night commutes.',
     category: 'Urban Safety',
     date: 'Feb 5, 2026',
     readTime: '7 min read',
-    image: '🏙️',
-    content: 'Essential safety habits every urban dweller should know...'
+    image: '🏙️'
   },
   {
+    id: 'community-reporting',
     title: 'How Community Reporting Makes Everyone Safer',
     excerpt: 'Discover the power of community-driven safety and how your contributions help protect others.',
     category: 'Community',
     date: 'Feb 1, 2026',
     readTime: '4 min read',
-    image: '👥',
-    content: 'The impact of community reporting on overall safety...'
+    image: '👥'
   },
   {
+    id: 'travel-safety-planning',
     title: 'Travel Safety: Planning Your Route Wisely',
     excerpt: 'Expert advice on route planning for maximum safety whether you\'re walking, cycling, or driving.',
     category: 'Travel Safety',
     date: 'Jan 28, 2026',
     readTime: '6 min read',
-    image: '🗺️',
-    content: 'Smart strategies for safe travel planning...'
+    image: '🗺️'
   },
   {
+    id: 'emergency-preparedness',
     title: 'Emergency Preparedness: What You Need to Know',
     excerpt: 'Be ready for unexpected situations with our comprehensive emergency preparedness guide.',
     category: 'Emergency',
     date: 'Jan 25, 2026',
     readTime: '8 min read',
-    image: '🚨',
-    content: 'Complete guide to emergency preparedness...'
+    image: '🚨'
   },
   {
+    id: 'safe-zone-verification',
     title: 'Safe Zones: How We Verify and Rate Locations',
     excerpt: 'Behind the scenes of our verification process and what makes a location SafeWays certified.',
     category: 'Technology',
     date: 'Jan 20, 2026',
     readTime: '5 min read',
-    image: '✅',
-    content: 'Our methodology for verifying safe zones...'
+    image: '✅'
   }
 ];
 
@@ -80,13 +80,21 @@ export default function Blog() {
       {/* Header */}
       <div className="bg-gradient-to-br from-purple-900 via-purple-800 to-orange-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <Link 
-            to={createPageUrl('LandingPage')}
-            className="inline-flex items-center gap-2 text-purple-100 hover:text-white mb-8 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </Link>
+          <div className="flex items-center justify-between mb-8">
+            <Link 
+              to={createPageUrl('LandingPage')}
+              className="inline-flex items-center gap-2 text-purple-100 hover:text-white transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Home
+            </Link>
+            <a
+              href="/login"
+              className="px-6 py-2 bg-white/10 backdrop-blur-sm text-white rounded-full font-semibold hover:bg-white/20 transition-all border border-white/20"
+            >
+              Admin Login
+            </a>
+          </div>
           
           <h1 className="text-5xl sm:text-6xl font-black mb-4">
             SafeWays Blog
@@ -134,9 +142,10 @@ export default function Blog() {
         {filteredPosts.length > 0 ? (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.map((post, index) => (
-              <article
+              <Link
                 key={index}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden border border-gray-100"
+                to={`${createPageUrl('BlogPost')}?id=${post.id}`}
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden border border-gray-100 block"
               >
                 <div className="p-8">
                   {/* Image/Emoji */}
@@ -169,12 +178,12 @@ export default function Blog() {
                       <Calendar className="w-4 h-4" />
                       {post.date}
                     </span>
-                    <button className="text-purple-600 hover:text-purple-700 font-semibold transition-colors">
+                    <span className="text-purple-600 hover:text-purple-700 font-semibold transition-colors">
                       Read More →
-                    </button>
+                    </span>
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         ) : (
