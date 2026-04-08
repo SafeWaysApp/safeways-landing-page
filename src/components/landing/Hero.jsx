@@ -83,7 +83,7 @@ export default function Hero() {
             </div>
 
             {/* Safety Portal Link */}
-            <div className="mt-6">
+            <div className="mt-6 flex flex-col sm:flex-row gap-4 items-start">
               <a 
                 href="https://app.safeways.io" 
                 target="_blank"
@@ -97,6 +97,19 @@ export default function Hero() {
                 <span className="font-semibold text-lg border-b-2 border-white/30 group-hover:border-white transition-all">
                   Try the Safety Portal →
                 </span>
+              </a>
+
+              <a
+                href="https://docs.google.com/forms/d/1HhG-5HwAcj7TxYJ1qtL0oGYYQsfw7TnO9fO_cXvDWSE/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => base44.analytics.track({ eventName: 'safety_survey_button_clicked' })}
+                className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white border border-white/40 px-5 py-2.5 rounded-full font-semibold transition-all"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+                Take our Safety Survey
               </a>
             </div>
           </div>
