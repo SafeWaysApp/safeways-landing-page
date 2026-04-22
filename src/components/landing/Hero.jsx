@@ -83,7 +83,7 @@ export default function Hero() {
             </div>
 
             {/* Safety Portal Link */}
-            <div className="mt-6 flex flex-col sm:flex-row gap-4 items-start">
+            <div className="mt-6 flex flex-col gap-3 items-start">
               <a 
                 href="https://app.safeways.io" 
                 target="_blank"
