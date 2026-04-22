@@ -7,7 +7,7 @@ const posts = [
     title: '10 Essential Safety Tips for Urban Travelers',
     excerpt: 'Navigating busy cities requires awareness and preparation. Learn the fundamental safety practices that can make your urban adventures worry-free.',
     category: 'Safety Tips',
-    date: 'Feb 10, 2026',
+    date: 'Apr 18, 2026',
     readTime: '5 min read',
     image: '🏙️'
   },
@@ -15,7 +15,7 @@ const posts = [
     title: 'Community Spotlight: How SafeWays Users Helped During Crisis',
     excerpt: 'Real stories from our community members who used SafeWays to help others during emergency situations. Discover the power of collective action.',
     category: 'Community Stories',
-    date: 'Feb 8, 2026',
+    date: 'Apr 14, 2026',
     readTime: '7 min read',
     image: '🤝'
   },
@@ -23,7 +23,7 @@ const posts = [
     title: 'Understanding Safety Zones: A Data-Driven Approach',
     excerpt: 'How we analyze and verify safe zones using community input, official data, and AI technology to provide accurate safety information.',
     category: 'Safety Tips',
-    date: 'Feb 5, 2026',
+    date: 'Apr 9, 2026',
     readTime: '6 min read',
     image: '📊'
   }

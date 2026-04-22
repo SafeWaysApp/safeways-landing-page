@@ -4,6 +4,7 @@ import Hero from '../components/landing/Hero';
 import Features from '../components/landing/Features';
 // import Team from '../components/landing/Team';
 import BlogPreview from '../components/landing/BlogPreview';
+import ContactSection from '../components/landing/ContactSection';
 import Footer from '../components/landing/Footer';
 
 export default function LandingPage() {
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <Features />
       {/* <Team /> */}
       <BlogPreview />
+      <ContactSection />
       <Footer />
     </div>
   );
