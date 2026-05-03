@@ -82,7 +82,19 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Data Security</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Cookies</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              The SafeWays website does not use any cookies itself, and we do not collect any personal data through this website.
+              However, as this website is hosted on the Base44 platform, Base44 may set essential technical cookies required to operate the hosting infrastructure.
+              These cookies are outside of SafeWays' control and are solely managed by Base44.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Please note that the SafeWays mobile application is currently in prototype stage and is not yet publicly available.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Data Security</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We implement industry-standard security measures to protect your personal information, including:
             </p>
