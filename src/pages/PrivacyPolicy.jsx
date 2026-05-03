@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
             </svg>
             Back to Home
           </Link>
-          <h1 className="text-4xl sm:text-5xl font-black mb-4">Privacy Policy</h1>
+          <h1 className="text-4xl sm:text-5xl font-black mb-4">Privacy policy</h1>
           <p className="text-xl text-purple-100">Last updated: February 11, 2026</p>
         </div>
       </div>
