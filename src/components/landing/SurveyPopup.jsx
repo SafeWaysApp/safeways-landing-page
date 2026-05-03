@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
-export default function SurveyPopup() {
+export default function SurveyPopup({ onDismiss }) {
   const [isVisible, setIsVisible] = useState(false);
+
+  const handleClose = () => {
+    setIsVisible(false);
+    onDismiss?.();
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => setIsVisible(true), 500);
@@ -15,7 +20,7 @@ export default function SurveyPopup() {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4">
       <div className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 text-center">
         <button
-          onClick={() => setIsVisible(false)}
+          onClick={handleClose}
           className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors text-gray-500"
         >
           <X className="w-5 h-5" />
@@ -37,13 +42,13 @@ export default function SurveyPopup() {
             href="https://docs.google.com/forms/d/1HhG-5HwAcj7TxYJ1qtL0oGYYQsfw7TnO9fO_cXvDWSE/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => setIsVisible(false)}
+            onClick={handleClose}
             className="w-full bg-gradient-to-r from-purple-600 to-orange-500 text-white py-3 px-6 rounded-full font-bold text-lg hover:opacity-90 transition-opacity"
           >
             Take the Survey →
           </a>
           <button
-            onClick={() => setIsVisible(false)}
+            onClick={handleClose}
             className="text-gray-400 hover:text-gray-600 text-sm transition-colors"
           >
             Maybe later
