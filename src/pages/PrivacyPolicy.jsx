@@ -24,6 +24,17 @@ export default function PrivacyPolicy() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="prose prose-lg max-w-none">
           <section className="mb-12">
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Welcome to SafeWays. We are committed to protecting your personal information and your right to privacy. 
+              This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use 
+              our mobile application and services.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-8">
+              By using SafeWays, you agree to the collection and use of information in accordance with this policy.
+            </p>
+          </section>
+
+          <section className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Information we collect</h2>
             
             <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">2.1 Personal information</h3>
