@@ -115,11 +115,8 @@ export default function PrivacyPolicy() {
             <p className="text-gray-700 leading-relaxed mb-4">
               If you have questions or concerns about this Privacy Policy, please contact us:
             </p>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-2"><strong>Email:</strong> privacy@safeways.com</p>
-              <p className="text-gray-700 mb-2"><strong>Address:</strong> SafeWays Inc., Legal Department</p>
-              <p className="text-gray-700"><strong>Response Time:</strong> We aim to respond within 30 days</p>
-            </div>
+            <p className="text-gray-700 mb-2"><strong>Email:</strong> piotr.buda@safeways.io</p>
+            <p className="text-gray-700">We aim to respond within 5 working days.</p>
           </section>
         </div>
       </div>
