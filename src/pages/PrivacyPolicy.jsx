@@ -24,19 +24,7 @@ export default function PrivacyPolicy() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="prose prose-lg max-w-none">
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Introduction</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Welcome to SafeWays. We are committed to protecting your personal information and your right to privacy. 
-              This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use 
-              our mobile application and services.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              By using SafeWays, you agree to the collection and use of information in accordance with this policy.
-            </p>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Information we collect</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Information we collect</h2>
             
             <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">2.1 Personal information</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -66,7 +54,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. How we use your information</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. How we use your information</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We use the collected information for the following purposes:
             </p>
@@ -82,7 +70,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Cookies</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Cookies</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               The SafeWays website does not use any cookies itself, and we do not collect any personal data through this website.
               However, as this website is hosted on the Base44 platform, Base44 may set essential technical cookies required to operate the hosting infrastructure.
@@ -94,7 +82,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Data security</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Data security</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We implement industry-standard security measures to protect your personal information, including:
             </p>
@@ -111,7 +99,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Contact us</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Contact us</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               If you have questions or concerns about this Privacy Policy, please contact us:
             </p>
