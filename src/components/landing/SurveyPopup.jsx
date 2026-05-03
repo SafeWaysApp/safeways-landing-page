@@ -29,7 +29,7 @@ export default function SurveyPopup() {
 
         <h2 className="text-2xl font-bold text-gray-900 mb-3">Help Shape SafeWays!</h2>
         <p className="text-gray-500 mb-6 leading-relaxed">
-          We'd love your feedback. Take our quick safety survey and help us build a safer world for everyone.
+          We'd love to hear from you. Take our quick survey and help us build an app that meets your needs.
         </p>
 
         <div className="flex flex-col gap-3">
