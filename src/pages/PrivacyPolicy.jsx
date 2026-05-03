@@ -36,9 +36,9 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Information We Collect</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Information we collect</h2>
             
-            <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">2.1 Personal Information</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">2.1 Personal information</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
               We collect information that you provide directly to us, including:
             </p>
@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
               <li>User-generated content such as safety reports and reviews</li>
             </ul>
 
-            <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">2.2 Location Data</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">2.2 Location data</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
               SafeWays collects real-time location data to provide core safety features, including:
             </p>
@@ -66,7 +66,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. How We Use Your Information</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. How we use your information</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We use the collected information for the following purposes:
             </p>
@@ -94,7 +94,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Data Security</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Data security</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We implement industry-standard security measures to protect your personal information, including:
             </p>
@@ -111,7 +111,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Contact Us</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Contact us</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               If you have questions or concerns about this Privacy Policy, please contact us:
             </p>

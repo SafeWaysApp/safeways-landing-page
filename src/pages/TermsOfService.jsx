@@ -15,7 +15,7 @@ export default function TermsOfService() {
             </svg>
             Back to Home
           </Link>
-          <h1 className="text-4xl sm:text-5xl font-black mb-4">Terms of Service</h1>
+          <h1 className="text-4xl sm:text-5xl font-black mb-4">Terms of service</h1>
           <p className="text-xl text-purple-100">Last updated: February 11, 2026</p>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function TermsOfService() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="prose prose-lg max-w-none">
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of terms</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Welcome to SafeWays. These Terms of Service ("Terms") govern your access to and use of the SafeWays 
               mobile application, website, and related services (collectively, the "Service"). By accessing or using 
@@ -36,7 +36,7 @@ export default function TermsOfService() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Description of Service</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Description of service</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               SafeWays provides location-based safety services, including:
             </p>
@@ -50,7 +50,7 @@ export default function TermsOfService() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Safety Disclaimer</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Safety disclaimer</h2>
             
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-6">
               <p className="text-gray-900 font-bold mb-2">IMPORTANT SAFETY NOTICE</p>
@@ -70,7 +70,7 @@ export default function TermsOfService() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Contact Information</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Contact information</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               If you have questions about these Terms, please contact us:
             </p>

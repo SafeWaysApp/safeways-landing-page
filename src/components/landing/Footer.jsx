@@ -44,9 +44,9 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link to={createPageUrl('LandingPage')} className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
-              <li><a href="#team" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#team" className="text-gray-400 hover:text-white transition-colors">About us</a></li>
               <li><Link to={createPageUrl('Blog')} className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
-              <li><a href="#download" className="text-gray-400 hover:text-white transition-colors">Download App</a></li>
+              <li><a href="#download" className="text-gray-400 hover:text-white transition-colors">Download app</a></li>
             </ul>
           </div>
 
@@ -54,10 +54,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Legal</h3>
             <ul className="space-y-3">
-              <li><Link to={createPageUrl('PrivacyPolicy')} className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link to={createPageUrl('TermsOfService')} className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+              <li><Link to={createPageUrl('PrivacyPolicy')} className="text-gray-400 hover:text-white transition-colors">Privacy policy</Link></li>
+              <li><Link to={createPageUrl('TermsOfService')} className="text-gray-400 hover:text-white transition-colors">Terms of service</Link></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie policy</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact us</a></li>
             </ul>
           </div>
         </div>
