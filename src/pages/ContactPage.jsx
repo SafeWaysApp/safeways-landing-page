@@ -15,7 +15,10 @@ export default function ContactPage() {
           </p>
         </div>
         <ContactSection />
-      </div>
+        <div className="max-w-2xl mx-auto px-4 py-8 text-center text-gray-600">
+          <p>We aim to respond within 5 working days.</p>
+        </div>
+        </div>
       <Footer />
     </div>
   );
