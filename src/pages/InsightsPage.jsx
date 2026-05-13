@@ -7,13 +7,7 @@ export default function InsightsPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <div className="pt-16">
-        <div className="py-16 text-center" style={{ background: 'linear-gradient(to bottom right, #581c87, #fb9782)' }}>
-          <h1 className="text-4xl sm:text-5xl font-black text-white mb-4">Insights & Stories</h1>
-          <p className="text-purple-100 text-xl max-w-2xl mx-auto px-4">Learn from our community, discover safety tips, and stay informed.</p>
-        </div>
-        <BlogPreview />
-      </div>
+      <BlogPreview />
       <Footer />
     </div>
   );
