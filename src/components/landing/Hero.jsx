@@ -2,16 +2,25 @@ import React, { useState } from 'react';
 import { base44 } from '@/api/base44Client';
 
 function TrustSignal({ label, tip, icon }) {
-  const [open, setOpen] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const [locked, setLocked] = useState(false);
+  const open = hovered || locked;
+
   return (
-    <div className="relative flex items-center gap-2 cursor-pointer" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} onClick={() => setOpen(o => !o)}>
+    <div
+      className="relative flex items-center gap-2 cursor-pointer"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onClick={() => setLocked(l => !l)}
+    >
       <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">{icon}</svg>
       </div>
       <span className="font-semibold">{label}</span>
       {open && (
-        <div className="absolute bottom-full left-0 mb-2 w-64 bg-white text-gray-800 text-sm rounded-xl shadow-xl p-3 z-50 leading-relaxed">
-          {tip}
+        <div className="absolute bottom-full left-0 mb-2 w-64 bg-white text-gray-800 text-sm rounded-xl shadow-xl z-50 overflow-hidden border border-gray-100">
+          <div className="bg-purple-700 text-white font-semibold px-4 py-2 text-sm">{label}</div>
+          <div className="px-4 py-3 leading-relaxed">{tip}</div>
           <div className="absolute top-full left-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"></div>
         </div>
       )}
@@ -50,7 +59,7 @@ export default function Hero() {
               {[
                 {
                   label: "Community powered",
-                  tip: "SafeWays is built by and for real people. As our community shares reports and experiences, the app learns and adapts — getting smarter and more accurate every day.",
+                  tip: "SafeWays is built by and for real people. As our community shares reports and experiences, the app learns and adapts, getting smarter and more accurate every day.",
                   icon: <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
                 },
                 {
