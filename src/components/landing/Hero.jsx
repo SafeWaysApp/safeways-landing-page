@@ -10,7 +10,7 @@ function TrustSignal({ label, tip, icon }) {
         <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">{icon}</svg>
         </div>
-        <span className="font-semibold">{label}</span>
+        <span className="font-semibold whitespace-nowrap">{label}</span>
         <svg className={`w-4 h-4 flex-shrink-0 transition-transform ${open ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
@@ -39,7 +39,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left: Content */}
           <div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-6">
@@ -138,8 +138,8 @@ export default function Hero() {
           {/* Right: Visual */}
           <div className="relative lg:block hidden">
             <div className="relative z-10">
-              <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-4 border border-white/20 shadow-2xl">
-                <div className="aspect-[3/4] rounded-2xl overflow-hidden">
+              <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-2xl">
+                <div className="aspect-[9/16] rounded-2xl overflow-hidden">
                   <img 
                     src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698bc57975eb60d9d1b511a2/56f9314a9_image.png" 
                     alt="SafeWays App Screenshot"
