@@ -2,29 +2,29 @@ import React, { useState } from 'react';
 import { base44 } from '@/api/base44Client';
 
 function TrustSignal({ label, tip, icon }) {
-  const [hovered, setHovered] = useState(false);
-  const [locked, setLocked] = useState(false);
-  const open = hovered || locked;
+  const [open, setOpen] = useState(false);
 
   return (
-    <div
-      className="relative flex items-center gap-2 cursor-pointer"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      onClick={() => setLocked(l => !l)}
-    >
-      <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">{icon}</svg>
+    <div className="flex flex-col gap-2">
+      <div
+        className="flex items-center gap-2 cursor-pointer"
+        onClick={() => setOpen(o => !o)}
+      >
+        <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
+          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">{icon}</svg>
+        </div>
+        <span className="font-semibold">{label}</span>
       </div>
-      <span className="font-semibold">{label}</span>
       {open && (
-        <div className="absolute bottom-full left-0 mb-2 w-64 bg-white text-gray-800 text-sm rounded-xl shadow-xl z-50 overflow-hidden border border-gray-100">
-          <div className="bg-purple-700 text-white font-semibold px-4 py-2 text-sm flex items-center justify-between">
-            <span>{label}</span>
-            <button onClick={(e) => { e.stopPropagation(); setLocked(false); setHovered(false); }} className="ml-2 text-white/70 hover:text-white text-lg leading-none">✕</button>
+        <div className="rounded-xl overflow-hidden shadow-lg border border-white/20" style={{ backgroundColor: '#b348c6' }}>
+          <div className="flex items-center justify-between px-4 py-2 border-b border-white/20">
+            <span className="font-semibold text-sm text-white">{label}</span>
+            <button
+              onClick={() => setOpen(false)}
+              className="text-white/70 hover:text-white text-lg leading-none ml-2"
+            >✕</button>
           </div>
-          <div className="px-4 py-3 leading-relaxed">{tip}</div>
-          <div className="absolute top-full left-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"></div>
+          <div className="px-4 py-3 text-sm text-white leading-relaxed">{tip}</div>
         </div>
       )}
     </div>
@@ -58,7 +58,7 @@ export default function Hero() {
             </p>
 
             {/* Trust Signals */}
-            <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-10">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-10 items-start">
               {[
                 {
                   label: "Community powered",
