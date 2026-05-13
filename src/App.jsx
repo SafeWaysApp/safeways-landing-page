@@ -10,7 +10,6 @@ import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import FeaturesPage from './pages/FeaturesPage';
 import InsightsPage from './pages/InsightsPage';
 import ContactPage from './pages/ContactPage';
-import OpenAppPage from './pages/OpenAppPage';
 
 const { Pages, Layout, mainPage } = pagesConfig;
 const mainPageKey = mainPage ?? Object.keys(Pages)[0];
@@ -65,7 +64,6 @@ const AuthenticatedApp = () => {
       <Route path="/features" element={<FeaturesPage />} />
       <Route path="/insights" element={<InsightsPage />} />
       <Route path="/contact" element={<ContactPage />} />
-      <Route path="/open-app" element={<OpenAppPage />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

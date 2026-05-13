@@ -5,7 +5,6 @@ const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'Insights & Stories', path: '/insights' },
   { label: 'Contact Us', path: '/contact' },
-  { label: 'Open App', path: '/open-app' },
 ];
 
 export default function Navbar() {
