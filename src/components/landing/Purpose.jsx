@@ -36,7 +36,7 @@ export default function Purpose() {
         <div className="flex items-center gap-12 mb-16">
         <div className="flex-1">
           <span className="inline-block text-sm font-bold uppercase tracking-widest text-purple-600 mb-2">Our Purpose</span>
-          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6 leading-tight">
+          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mt-8 mb-6 leading-tight">
             Everyone deserves to walk the world with confidence.
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed mb-4">
