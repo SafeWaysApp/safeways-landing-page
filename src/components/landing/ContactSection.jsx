@@ -42,7 +42,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="font-bold text-gray-900">Send us a message</p>
-                <p className="text-sm text-gray-400">hello@safeways.io</p>
+
               </div>
             </div>
 
