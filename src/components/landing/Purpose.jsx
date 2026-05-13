@@ -33,7 +33,8 @@ export default function Purpose() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="flex items-start gap-12 mb-16">
+        <div className="flex-1">
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-purple-600 mb-4 bg-purple-50 px-3 py-1 rounded-full">Our Purpose</span>
           <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6 leading-tight">
             Everyone deserves to walk the world with confidence.
@@ -44,6 +45,14 @@ export default function Purpose() {
           <p className="text-lg text-gray-600 leading-relaxed">
             Fear of harassment and violence restricts millions of women's freedom every day — limiting access to work, education, and leisure. This is not a personal failing. It is an unacceptable systemic reality. We have normalised a totally abnormal experience, and it needs to change.
           </p>
+        </div>
+          <div className="hidden lg:flex items-center justify-center flex-shrink-0">
+            <img
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698bc57975eb60d9d1b511a2/2ba989b2d_safeway_logo_512.png"
+              alt="SafeWays Logo"
+              className="w-64 h-64 object-contain opacity-90"
+            />
+          </div>
         </div>
 
         {/* Stats Grid */}
