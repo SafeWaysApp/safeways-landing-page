@@ -54,7 +54,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="bg-purple-700 hover:bg-purple-800 text-white text-sm font-bold px-5 py-2 rounded-full transition-colors shadow"
             >
-              Open App
+              The App
             </a>
           </div>
 
@@ -95,7 +95,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="bg-purple-700 text-white text-sm font-bold px-5 py-2 rounded-full text-center mt-2"
             >
-              Open App
+              The App
             </a>
           </div>
         </div>
