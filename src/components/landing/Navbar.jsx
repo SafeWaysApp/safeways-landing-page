@@ -42,9 +42,10 @@ export default function Navbar() {
                 <Link
                   key={path}
                   to={path}
-                  className={`font-semibold text-sm transition-colors ${active ? 'text-white' : 'text-white/80 hover:text-white'}`}
+                  className={`font-semibold text-sm transition-colors relative group ${active ? 'text-white' : 'text-white/80 hover:text-white'}`}
                 >
                   {label}
+                  <span className={`absolute -bottom-1 left-0 h-0.5 bg-white rounded-full transition-all duration-200 ${active ? 'w-full' : 'w-0 group-hover:w-full'}`} />
                 </Link>
               );
             })}
