@@ -30,7 +30,7 @@ export default function Navbar() {
             <img
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698bc57975eb60d9d1b511a2/2ba989b2d_safeway_logo_512.png"
               alt="SafeWays"
-              className="h-9 w-auto"
+              className="h-14 w-auto"
             />
           </Link>
 
