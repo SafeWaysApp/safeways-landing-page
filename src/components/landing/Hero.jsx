@@ -114,6 +114,18 @@ export default function Hero() {
                 Web version
               </a>
             </div>
+            <p className="text-xs italic text-white/70 mt-3">
+              Our mobile app is not yet publicly available — only the web version is live right now.{' '}
+              <a
+                href="https://docs.google.com/forms/d/1HhG-5HwAcj7TxYJ1qtL0oGYYQsfw7TnO9fO_cXvDWSE/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-white transition-colors"
+              >
+                Complete our short survey
+              </a>{' '}
+              to be notified when it launches.
+            </p>
 
             {/* Safety Portal Link */}
             <div className="mt-10 flex flex-col gap-3 items-start">
