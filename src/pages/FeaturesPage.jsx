@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/landing/Navbar';
 import Features from '../components/landing/Features';
+import Purpose from '../components/landing/Purpose';
 import Footer from '../components/landing/Footer';
 
 export default function FeaturesPage() {
@@ -12,6 +13,7 @@ export default function FeaturesPage() {
           <h1 className="text-4xl sm:text-5xl font-black text-white mb-4">Our Features</h1>
           <p className="text-purple-100 text-xl max-w-2xl mx-auto px-4">Everything you need to stay safe, informed, and confident.</p>
         </div>
+        <Purpose />
         <Features />
       </div>
       <Footer />

@@ -3,6 +3,7 @@ import SurveyPopup from '../components/landing/SurveyPopup';
 import Navbar from '../components/landing/Navbar';
 import Hero from '../components/landing/Hero';
 import Features from '../components/landing/Features';
+import Purpose from '../components/landing/Purpose';
 // import Team from '../components/landing/Team';
 import BlogPreview from '../components/landing/BlogPreview';
 import ContactSection from '../components/landing/ContactSection';
@@ -19,6 +20,7 @@ export default function LandingPage() {
       {showCookies && <CookieBanner />}
 
       <Hero />
+      <Purpose />
       <Features />
       {/* <Team /> */}
       <BlogPreview />

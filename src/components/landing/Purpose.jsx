@@ -1,0 +1,77 @@
+import React from 'react';
+
+const stats = [
+  {
+    figure: '1 in 3',
+    description: 'women in the EU have experienced physical violence, sexual violence, or threats in their adulthood.',
+    source: 'EU Gender-Based Violence Survey, 2024'
+  },
+  {
+    figure: '1 in 6',
+    description: 'women in the EU have experienced sexual violence, including rape, in their adulthood.',
+    source: 'EU Gender-Based Violence Survey, 2024'
+  },
+  {
+    figure: 'Only 1 in 8',
+    description: 'women who experienced violence reported the incident to the police.',
+    source: 'EU Gender-Based Violence Survey, 2024'
+  },
+  {
+    figure: '60%',
+    description: 'of women feel unsafe walking alone at night.',
+    source: 'UN Women, 2021'
+  },
+];
+
+export default function Purpose() {
+  return (
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Header */}
+        <div className="max-w-3xl mb-16">
+          <span className="inline-block text-xs font-bold uppercase tracking-widest text-purple-600 mb-4 bg-purple-50 px-3 py-1 rounded-full">Our Purpose</span>
+          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6 leading-tight">
+            Everyone deserves to walk the world with confidence.
+          </h2>
+          <p className="text-xl text-gray-600 leading-relaxed mb-4">
+            That's what we believe. But we also know that's not the reality for everyone — and particularly not for women.
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Fear of harassment and violence restricts millions of women's freedom every day — limiting access to work, education, and leisure. Women socialise less at night, return home earlier, and avoid entire parts of their own cities. This is not a personal failing. It is an unacceptable systemic reality, and in nations that can afford to make streets safer, it is ultimately a political choice.
+          </p>
+        </div>
+
+        {/* Stats Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {stats.map((stat, i) => (
+            <div
+              key={i}
+              className="rounded-2xl p-6 border-2 border-purple-100 bg-purple-50 flex flex-col gap-3"
+            >
+              <div className="text-4xl font-black text-purple-700">{stat.figure}</div>
+              <p className="text-gray-700 text-sm leading-relaxed flex-1">{stat.description}</p>
+              <p className="text-xs text-gray-400 font-medium">{stat.source}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Call to action block */}
+        <div className="rounded-3xl p-8 sm:p-12 text-white" style={{ background: 'linear-gradient(to bottom right, #581c87, #9333ea)' }}>
+          <div className="max-w-3xl">
+            <h3 className="text-2xl sm:text-3xl font-black mb-4">
+              This is why SafeWays exists.
+            </h3>
+            <p className="text-purple-100 text-lg leading-relaxed mb-6">
+              We built SafeWays to give every person — regardless of gender, background, or location — the information and confidence they need to move freely through their city. Real-time safety data, community-verified alerts, and intelligent routing shouldn't be a luxury. They should be available to everyone, everywhere, right now.
+            </p>
+            <p className="text-purple-200 text-base leading-relaxed">
+              Because a safer city isn't just about fewer incidents. It's about ensuring that the <span className="font-bold text-white">fear</span> of those incidents no longer shapes how people live their lives.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}
