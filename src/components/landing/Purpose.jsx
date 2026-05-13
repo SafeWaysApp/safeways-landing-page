@@ -4,22 +4,26 @@ const stats = [
   {
     figure: '1 in 3',
     description: 'women in the EU have experienced physical violence, sexual violence, or threats in their adulthood.',
-    source: 'EU Gender-Based Violence Survey, 2024'
+    source: 'EU Gender-Based Violence Survey, 2024',
+    sourceUrl: 'https://fra.europa.eu/en/publication/2024/gender-based-violence-survey-2024'
   },
   {
     figure: '1 in 6',
     description: 'women in the EU have experienced sexual violence, including rape, in their adulthood.',
-    source: 'EU Gender-Based Violence Survey, 2024'
+    source: 'EU Gender-Based Violence Survey, 2024',
+    sourceUrl: 'https://fra.europa.eu/en/publication/2024/gender-based-violence-survey-2024'
   },
   {
     figure: 'Only 1 in 8',
     description: 'women who experienced violence reported the incident to the police.',
-    source: 'EU Gender-Based Violence Survey, 2024'
+    source: 'EU Gender-Based Violence Survey, 2024',
+    sourceUrl: 'https://fra.europa.eu/en/publication/2024/gender-based-violence-survey-2024'
   },
   {
     figure: '60%',
     description: 'of women feel unsafe walking alone at night.',
-    source: 'UN Women, 2021'
+    source: 'UN Women, 2021',
+    sourceUrl: 'https://www.unwomen.org/en/news/stories/2021/9/feature-making-cities-and-public-spaces-safe-for-women-and-girls'
   },
 ];
 
@@ -51,7 +55,14 @@ export default function Purpose() {
             >
               <div className="text-4xl font-black text-purple-700">{stat.figure}</div>
               <p className="text-gray-700 text-sm leading-relaxed flex-1">{stat.description}</p>
-              <p className="text-xs text-gray-400 font-medium">{stat.source}</p>
+              <a
+                href={stat.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-purple-400 hover:text-purple-600 font-medium underline underline-offset-2 transition-colors"
+              >
+                {stat.source} ↗
+              </a>
             </div>
           ))}
         </div>
