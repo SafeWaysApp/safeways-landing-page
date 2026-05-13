@@ -47,7 +47,7 @@ export default function Footer() {
               <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
               <li><Link to="/open-app" className="text-gray-400 hover:text-white transition-colors">The App</Link></li>
               <li><Link to={createPageUrl('TermsOfService')} className="text-gray-400 hover:text-white transition-colors">Terms of service</Link></li>
-              <li><Link to={createPageUrl('PrivacyPolicy')} className="text-gray-400 hover:text-white transition-colors">Cookie policy</Link></li>
+              <li><Link to={createPageUrl('PrivacyPolicy')} className="text-gray-400 hover:text-white transition-colors">Privacy policy</Link></li>
             </ul>
           </div>
         </div>
