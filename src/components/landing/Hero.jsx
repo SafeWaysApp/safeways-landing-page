@@ -47,8 +47,7 @@ export default function Hero() {
               Your Safety<br />Your Way
             </h1>
             <p className="text-xl sm:text-2xl font-medium text-purple-100 mb-8 leading-relaxed">
-              Navigate the world with confidence. SafeWays provides real-time safety insights, 
-              community-driven alerts, and intelligent route planning to keep you secure wherever you go.
+              Navigate the world with confidence. SafeWays provides community-driven alerts, verified safe zones, real-time safety insights, and intelligent route planning to prioritise your safety wherever you decide to walk.
             </p>
 
             {/* Trust Signals */}
