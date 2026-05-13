@@ -80,24 +80,22 @@ export default function Hero() {
                 </svg>
                 Get it on Google Play
               </a>
+              <a 
+                href="https://app.safeways.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => base44.analytics.track({ eventName: 'safety_portal_button_clicked' })}
+                className="inline-flex items-center justify-center gap-3 bg-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-purple-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
+                </svg>
+                Access the web version
+              </a>
             </div>
 
             {/* Safety Portal Link */}
             <div className="mt-6 flex flex-col gap-3 items-start">
-              <a 
-                href="https://app.safeways.io" 
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => base44.analytics.track({ eventName: 'safety_portal_button_clicked' })}
-                className="inline-flex items-center justify-center gap-2 text-white hover:text-purple-100 transition-all group"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-                <span className="font-semibold text-lg border-b-2 border-white/30 group-hover:border-white transition-all">
-                  Try it today! →
-                </span>
-              </a>
 
               <a
                 href="https://docs.google.com/forms/d/1HhG-5HwAcj7TxYJ1qtL0oGYYQsfw7TnO9fO_cXvDWSE/viewform"
