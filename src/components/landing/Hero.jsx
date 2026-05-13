@@ -30,9 +30,9 @@ export default function Hero() {
     <div className="relative text-white overflow-hidden" style={{ background: 'linear-gradient(to bottom right, #581c87, #fb9782)' }}>
 
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
         {/* Logo */}
-        <div className="mb-12">
+        <div className="mb-8">
           <img 
             src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698bc57975eb60d9d1b511a2/2ba989b2d_safeway_logo_512.png" 
             alt="SafeWays Logo" 
@@ -40,7 +40,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left: Content */}
           <div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-6">
