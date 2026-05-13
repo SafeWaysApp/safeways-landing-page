@@ -101,7 +101,7 @@ export default function ContactSection() {
                 className="w-full text-white font-bold py-4 rounded-xl transition-all hover:opacity-90 hover:shadow-lg text-lg"
                 style={{ background: 'linear-gradient(to right, #581c87, #9333ea)' }}
               >
-                Send Message →
+                Send →
               </button>
             </form>
           </div>
