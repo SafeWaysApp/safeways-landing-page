@@ -8,9 +8,11 @@ export default function ContactPage() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <div className="pt-16">
-        <div className="py-16 text-center" style={{ background: 'linear-gradient(to bottom right, #581c87, #fb9782)' }}>
-          <h1 className="text-4xl sm:text-5xl font-black text-white mb-4">Contact Us</h1>
-          <p className="text-purple-100 text-xl max-w-2xl mx-auto px-4">We'd love to hear from you. Get in touch with the SafeWays team.</p>
+        <div className="py-20 text-center" style={{ background: 'linear-gradient(to bottom right, #581c87, #fb9782)' }}>
+          <h1 className="text-4xl sm:text-5xl font-black text-white mb-6">Contact Us</h1>
+          <p className="text-purple-100 text-xl max-w-2xl mx-auto px-4 leading-relaxed">
+            Have questions about SafeWays or want to learn more about our urban safety intelligence platform? We'd love to hear from you.
+          </p>
         </div>
         <ContactSection />
       </div>
