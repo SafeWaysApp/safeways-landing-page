@@ -114,8 +114,11 @@ export default function PrivacyPolicy() {
             <p className="text-gray-700 leading-relaxed mb-4">
               If you have questions or concerns about this Privacy Policy, please contact us:
             </p>
-            <p className="text-gray-700 mb-2"><strong>Email:</strong> piotr.buda@safeways.io</p>
-            <p className="text-gray-700">We aim to respond within 5 working days.</p>
+            <p className="text-gray-700">
+              <Link to="/contact" className="text-purple-700 font-semibold hover:text-purple-900 underline transition-colors">
+                Contact us via our contact form
+              </Link>
+            </p>
           </section>
         </div>
       </div>
