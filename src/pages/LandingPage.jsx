@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SurveyPopup from '../components/landing/SurveyPopup';
-
+import Navbar from '../components/landing/Navbar';
 import Hero from '../components/landing/Hero';
 import Features from '../components/landing/Features';
 // import Team from '../components/landing/Team';
@@ -14,6 +14,7 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navbar />
       <SurveyPopup onDismiss={() => setShowCookies(true)} />
       {showCookies && <CookieBanner />}
 

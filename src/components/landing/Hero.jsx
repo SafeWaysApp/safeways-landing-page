@@ -26,7 +26,7 @@ export default function Hero() {
   const [openSignal, setOpenSignal] = useState(null);
 
   return (
-    <div className="relative text-white overflow-hidden" style={{ background: 'linear-gradient(to bottom right, #581c87, #fb9782)' }}>
+    <div className="relative text-white overflow-hidden pt-16" style={{ background: 'linear-gradient(to bottom right, #581c87, #fb9782)' }}>
 
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
