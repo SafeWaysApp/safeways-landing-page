@@ -39,6 +39,7 @@ export default function Footer() {
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/insights" className="text-gray-400 hover:text-white transition-colors">Insights & Stories</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
+              <li><a href="https://app.safeways.io" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Open App</a></li>
             </ul>
           </div>
 
