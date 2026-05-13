@@ -6,7 +6,7 @@ export default function ContactSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailto = `mailto:hello@safeways.io?subject=${encodeURIComponent(form.subject || 'Message from ' + form.name)}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${encodeURIComponent(form.name)} (${encodeURIComponent(form.email)})`;
+    const mailto = `mailto:valentina.garcia@safeways.io,piotr.buda@safeways.io?subject=${encodeURIComponent(form.subject || 'Message from ' + form.name)}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${encodeURIComponent(form.name)} (${encodeURIComponent(form.email)})`;
     window.open(mailto);
     setSubmitted(true);
   };
