@@ -22,11 +22,7 @@ export default function Navbar() {
   const isHome = location.pathname === '/';
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled || !isHome
-        ? 'bg-white/95 backdrop-blur-md shadow-md'
-        : 'backdrop-blur-sm'
-    }`} style={!(scrolled || !isHome) ? { background: 'linear-gradient(to bottom right, #581c87, #9333ea)' } : {}}>
+    <nav className="fixed top-0 left-0 right-0 z-50" style={{ backgroundColor: '#fb9782' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -46,15 +42,7 @@ export default function Navbar() {
                 <Link
                   key={path}
                   to={path}
-                  className={`font-semibold text-sm transition-colors ${
-                    scrolled || !isHome
-                      ? active
-                        ? 'text-purple-700'
-                        : 'text-gray-700 hover:text-purple-700'
-                      : active
-                        ? 'text-white'
-                        : 'text-white/80 hover:text-white'
-                  }`}
+                  className={`font-semibold text-sm transition-colors ${active ? 'text-white' : 'text-white/80 hover:text-white'}`}
                 >
                   {label}
                 </Link>
@@ -72,7 +60,7 @@ export default function Navbar() {
 
           {/* Mobile Hamburger */}
           <button
-            className={`md:hidden p-2 rounded-lg transition-colors ${scrolled || !isHome ? 'text-gray-700' : 'text-white'}`}
+            className="md:hidden p-2 rounded-lg text-white transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
