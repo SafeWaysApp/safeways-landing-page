@@ -44,7 +44,7 @@ export default function Hero() {
           {/* Left: Content */}
           <div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-6">
-              Your Safety,<br />Your Way
+              Your Safety<br />Your Way
             </h1>
             <p className="text-xl sm:text-2xl font-medium text-purple-100 mb-8 leading-relaxed">
               Navigate the world with confidence. SafeWays provides real-time safety insights, 
