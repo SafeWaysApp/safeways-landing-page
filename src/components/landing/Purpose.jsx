@@ -83,7 +83,7 @@ export default function Purpose() {
               This is why SafeWays exists.
             </h3>
             <p className="text-purple-100 text-lg leading-relaxed mb-6">
-              SafeWays is not the solution to this problem — only systemic change can be. But while that change is still being fought for, we want to help you make informed decisions about your walking routes.
+              SafeWays is not the solution to this problem — only systemic change can be. But while that change is still being fought for, we want to empower women and anyone who uses our app to walk their city with confidence, knowing their route has been planned with safety in mind, not just speed.
             </p>
             <p className="text-purple-200 text-base leading-relaxed italic">
               Because everyone deserves to walk through their city freely, and until the world catches up, we'll try our best to help you do exactly that.
