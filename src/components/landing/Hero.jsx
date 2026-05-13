@@ -27,7 +27,7 @@ function TrustSignal({ label, tip, icon }) {
 
 export default function Hero() {
   return (
-    <div className="relative bg-gradient-to-br from-purple-900 via-purple-800 to-orange-600 text-white overflow-hidden">
+    <div className="relative text-white overflow-hidden" style={{ background: 'linear-gradient(to bottom right, #581c87, #fb9782)' }}>
 
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
