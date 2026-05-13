@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
   { label: 'Home', path: '/' },
-  { label: 'Our Features', path: '/features' },
   { label: 'Insights & Stories', path: '/insights' },
   { label: 'Contact Us', path: '/contact' },
 ];
