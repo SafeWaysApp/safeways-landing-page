@@ -41,17 +41,9 @@ export default function Purpose() {
           <p className="text-xl text-gray-600 leading-relaxed mb-4">
             That's what we believe. But we also know that's not the reality for everyone — and particularly not for women.
           </p>
-          <p className="text-lg text-gray-600 leading-relaxed mb-6">
-            Fear of harassment and violence restricts millions of women's freedom every day — limiting access to work, education, and leisure. Women socialise less at night, return home earlier, and avoid entire parts of their own cities. This is not a personal failing. It is an unacceptable systemic reality, and in nations that can afford to make streets safer, it is ultimately a political choice.
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Fear of harassment and violence restricts millions of women's freedom every day — limiting access to work, education, and leisure. This is not a personal failing. It is an unacceptable systemic reality. We have normalised a totally abnormal experience, and it needs to change.
           </p>
-          <blockquote className="border-l-4 border-purple-400 pl-6 py-2">
-            <p className="text-lg text-gray-700 italic leading-relaxed">
-              Some women are avoiding entire parts of their own city. They worry about how they'll get home after an evening with friends. They feel the need to text someone just to say they arrived safely.
-            </p>
-            <p className="mt-4 text-lg font-bold text-gray-900">
-              We have normalised a totally abnormal experience. This is an unacceptable systemic reality — and it needs to change.
-            </p>
-          </blockquote>
         </div>
 
         {/* Stats Grid */}
