@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { base44 } from '@/api/base44Client';
 
-function TrustSignal({ label, tip, icon }) {
-  const [open, setOpen] = useState(false);
-
+function TrustSignal({ label, tip, icon, open, onToggle }) {
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpen(!open)}>
+      <div className="flex items-center gap-2 cursor-pointer" onClick={onToggle}>
         <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">{icon}</svg>
         </div>
@@ -25,6 +23,8 @@ function TrustSignal({ label, tip, icon }) {
 }
 
 export default function Hero() {
+  const [openSignal, setOpenSignal] = useState(null);
+
   return (
     <div className="relative text-white overflow-hidden" style={{ background: 'linear-gradient(to bottom right, #581c87, #fb9782)' }}>
 
@@ -73,7 +73,14 @@ export default function Hero() {
                   icon: <path fillRule="evenodd" d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 2a6 6 0 110 12A6 6 0 0110 4zm0 1a1 1 0 00-1 1v4a1 1 0 00.553.894l3 1.5a1 1 0 10.894-1.788L12 11.382V7a1 1 0 00-1-1z" clipRule="evenodd" />
                 },
               ].map(({ label, tip, icon }) => (
-                <TrustSignal key={label} label={label} tip={tip} icon={icon} />
+                <TrustSignal
+                  key={label}
+                  label={label}
+                  tip={tip}
+                  icon={icon}
+                  open={openSignal === label}
+                  onToggle={() => setOpenSignal(openSignal === label ? null : label)}
+                />
               ))}
             </div>
 
