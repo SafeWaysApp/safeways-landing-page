@@ -75,7 +75,6 @@ export default function TermsOfService() {
               If you have questions about these Terms, please contact us:
             </p>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-2"><strong>Address:</strong> SafeWays Inc., Legal Department</p>
               <p className="text-gray-700">
                 <Link to="/contact" className="text-purple-700 font-semibold hover:text-purple-900 underline transition-colors">
                   Contact us via our contact form
