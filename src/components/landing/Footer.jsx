@@ -16,8 +16,7 @@ export default function Footer() {
               className="h-12 w-auto mb-6"
             />
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
-              SafeWays empowers individuals and communities with real-time safety insights, 
-              intelligent routing, and community-driven protection. Navigate the world with confidence.
+              SafeWays is community powered, provides verified safe zones, real-time updates, official safety data, so you can walk the world with confidence.
             </p>
             <div className="flex gap-4">
               <a href="https://www.instagram.com/safewaysapp?igsh=c2F5NWdrM3Q5ZTlm" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-purple-600 hover:bg-purple-700 rounded-full flex items-center justify-center transition-colors">
