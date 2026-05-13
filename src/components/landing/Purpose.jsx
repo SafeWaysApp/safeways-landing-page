@@ -68,8 +68,8 @@ export default function Purpose() {
         </div>
 
         {/* Call to action block */}
-        <div className="rounded-3xl p-8 sm:p-12 text-white" style={{ background: 'linear-gradient(to bottom right, #581c87, #9333ea)' }}>
-          <div className="max-w-3xl">
+        <div className="rounded-3xl p-8 sm:p-12 text-white max-w-3xl mx-auto" style={{ background: 'linear-gradient(to bottom right, #581c87, #9333ea)' }}>
+          <div>
             <h3 className="text-2xl sm:text-3xl font-black mb-4">
               This is why SafeWays exists.
             </h3>
