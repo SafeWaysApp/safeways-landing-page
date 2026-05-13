@@ -40,8 +40,7 @@ export default function BlogPreview() {
               Safety Insights & Stories
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl">
-              Learn from our community, discover safety tips, and stay informed about the latest 
-              in personal security and community protection.
+              Learn from our community, discover safety tips, and stay informed.
             </p>
           </div>
 
