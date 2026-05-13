@@ -37,11 +37,8 @@ export default function BlogPreview() {
         <div className="flex items-end justify-between mb-12">
           <div>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
-              Safety Insights & Stories
+              Insights & Stories
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl">
-              Learn from our community, discover safety tips, and stay informed.
-            </p>
           </div>
 
         </div>
