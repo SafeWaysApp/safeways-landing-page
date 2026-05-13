@@ -5,16 +5,15 @@ function TrustSignal({ label, tip, icon }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div
-      className="flex flex-col gap-2"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-    >
-      <div className="flex items-center gap-2 cursor-default">
+    <div className="flex flex-col gap-2">
+      <div className="flex items-center gap-2 cursor-pointer" onClick={() => setOpen(!open)}>
         <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">{icon}</svg>
         </div>
         <span className="font-semibold">{label}</span>
+        <svg className={`w-4 h-4 flex-shrink-0 transition-transform ${open ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
       </div>
       {open && (
         <div className="rounded-xl overflow-hidden shadow-lg border border-white/20" style={{ backgroundColor: '#b348c6' }}>
