@@ -7,9 +7,9 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 gap-12">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div>
             <img 
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698bc57975eb60d9d1b511a2/2ba989b2d_safeway_logo_512.png" 
               alt="SafeWays Logo" 
@@ -39,14 +39,7 @@ export default function Footer() {
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/insights" className="text-gray-400 hover:text-white transition-colors">Insights & Stories</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
-              <li><a href="https://app.safeways.io" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Open App</a></li>
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Legal</h3>
-            <ul className="space-y-3">
+              <li><Link to="/open-app" className="text-gray-400 hover:text-white transition-colors">Open App</Link></li>
               <li><Link to={createPageUrl('PrivacyPolicy')} className="text-gray-400 hover:text-white transition-colors">Privacy policy</Link></li>
               <li><Link to={createPageUrl('TermsOfService')} className="text-gray-400 hover:text-white transition-colors">Terms of service</Link></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie policy</a></li>
