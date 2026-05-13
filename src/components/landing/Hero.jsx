@@ -1,5 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { base44 } from '@/api/base44Client';
+
+function TrustSignal({ label, tip, icon }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="relative flex items-center gap-2 cursor-pointer" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} onClick={() => setOpen(o => !o)}>
+      <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">{icon}</svg>
+      </div>
+      <span className="font-semibold">{label}</span>
+      {open && (
+        <div className="absolute bottom-full left-0 mb-2 w-64 bg-white text-gray-800 text-sm rounded-xl shadow-xl p-3 z-50 leading-relaxed">
+          {tip}
+          <div className="absolute top-full left-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"></div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Hero() {
   return (
@@ -29,38 +47,30 @@ export default function Hero() {
 
             {/* Trust Signals */}
             <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-10">
-              <div className="flex items-center gap-2">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
-                  </svg>
-                </div>
-                <span className="font-semibold">Community powered</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="font-semibold">Verified safe zones</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="font-semibold">Real-time updates</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 2a6 6 0 110 12A6 6 0 0110 4zm0 1a1 1 0 00-1 1v4a1 1 0 00.553.894l3 1.5a1 1 0 10.894-1.788L12 11.382V7a1 1 0 00-1-1z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="font-semibold">Official safety data</span>
-              </div>
+              {[
+                {
+                  label: "Community powered",
+                  tip: "SafeWays is built by and for real people. As our community shares reports and experiences, the app learns and adapts — getting smarter and more accurate every day.",
+                  icon: <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                },
+                {
+                  label: "Verified safe zones",
+                  tip: "We map every city using a simple traffic-light system — green, yellow, and amber — so you can see at a glance how safe an area is, based on real data and community reports.",
+                  icon: <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                },
+                {
+                  label: "Real-time updates",
+                  tip: "Safety doesn't wait — and neither do we. Reports are shared live so you always know what's happening around you, right now, as it unfolds.",
+                  icon: <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+                },
+                {
+                  label: "Official safety data",
+                  tip: "We combine city data, police reports, and trusted official sources — then cross-check everything so you can trust that what you see is accurate, reliable, and up to date.",
+                  icon: <path fillRule="evenodd" d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 2a6 6 0 110 12A6 6 0 0110 4zm0 1a1 1 0 00-1 1v4a1 1 0 00.553.894l3 1.5a1 1 0 10.894-1.788L12 11.382V7a1 1 0 00-1-1z" clipRule="evenodd" />
+                },
+              ].map(({ label, tip, icon }) => (
+                <TrustSignal key={label} label={label} tip={tip} icon={icon} />
+              ))}
             </div>
 
             {/* CTAs */}
