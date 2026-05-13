@@ -51,7 +51,7 @@ export default function Hero() {
             </p>
 
             {/* Trust Signals */}
-            <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-10 items-start">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-6 mb-10 items-start">
               {[
                 {
                   label: "Community powered",
@@ -84,7 +84,7 @@ export default function Hero() {
                 Walk your city with confidence.<br className="hidden sm:block" /> Try SafeWays today.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-2">
               <a 
                 href="#" 
                 className="inline-flex items-center justify-center gap-3 bg-white text-purple-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-purple-50 transition-all shadow-xl hover:shadow-2xl hover:scale-105 w-full sm:w-52"
@@ -119,7 +119,7 @@ export default function Hero() {
             </div>
 
             {/* Safety Portal Link */}
-            <div className="mt-6 flex flex-col gap-3 items-start">
+            <div className="mt-8 flex flex-col gap-3 items-start">
 
               <a
                 href="https://docs.google.com/forms/d/1HhG-5HwAcj7TxYJ1qtL0oGYYQsfw7TnO9fO_cXvDWSE/viewform"
