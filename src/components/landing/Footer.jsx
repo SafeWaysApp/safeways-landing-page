@@ -43,16 +43,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Legal</h3>
-            <ul className="space-y-3">
-              <li><Link to={createPageUrl('PrivacyPolicy')} className="text-gray-400 hover:text-white transition-colors">Privacy policy</Link></li>
-              <li><Link to={createPageUrl('TermsOfService')} className="text-gray-400 hover:text-white transition-colors">Terms of service</Link></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact us</a></li>
-            </ul>
-          </div>
+
         </div>
       </div>
 
