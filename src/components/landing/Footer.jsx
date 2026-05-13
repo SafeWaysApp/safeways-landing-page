@@ -36,11 +36,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-3">
-              <li><Link to={createPageUrl('LandingPage')} className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
-              <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
-              <li><a href="#team" className="text-gray-400 hover:text-white transition-colors">About us</a></li>
-              <li><Link to={createPageUrl('Blog')} className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
-              <li><a href="#download" className="text-gray-400 hover:text-white transition-colors">Download app</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
+              <li><Link to="/insights" className="text-gray-400 hover:text-white transition-colors">Insights & Stories</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
