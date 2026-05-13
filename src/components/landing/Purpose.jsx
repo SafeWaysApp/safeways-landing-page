@@ -74,10 +74,10 @@ export default function Purpose() {
               This is why SafeWays exists.
             </h3>
             <p className="text-purple-100 text-lg leading-relaxed mb-6">
-              We built SafeWays to give every person — regardless of gender, background, or location — the information and confidence they need to move freely through their city. Real-time safety data, community-verified alerts, and intelligent routing shouldn't be a luxury. They should be available to everyone, everywhere, right now.
+              SafeWays is not the solution to this problem — only systemic change can be. But while that change is still being fought for, we want to empower women and anyone who uses our app to navigate their city with confidence, knowing their route has been planned with safety in mind, not just speed.
             </p>
             <p className="text-purple-200 text-base leading-relaxed">
-              Because a safer city isn't just about fewer incidents. It's about ensuring that the <span className="font-bold text-white">fear</span> of those incidents no longer shapes how people live their lives.
+              Because everyone deserves to move through their city freely — and until the world catches up, we'll help you do exactly that.
             </p>
           </div>
         </div>
