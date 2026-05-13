@@ -28,7 +28,7 @@ export default function Hero() {
             </p>
 
             {/* Trust Signals */}
-            <div className="flex flex-wrap gap-6 mb-10">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-10">
               <div className="flex items-center gap-2">
                 <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
