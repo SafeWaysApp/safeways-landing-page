@@ -37,7 +37,7 @@ export default function Purpose() {
         <div className="flex-1">
           <span className="inline-block text-sm font-bold uppercase tracking-widest text-purple-600 mb-2">Our Purpose</span>
           <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mt-8 mb-6 leading-tight">
-            Everyone should walk the world with confidence.
+            Everyone should walk the world with confidence
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed mb-4">
             That's what we believe. But we also know that's not the reality for everyone, and particularly not for women.
@@ -80,7 +80,7 @@ export default function Purpose() {
         <div className="rounded-3xl p-8 sm:p-12 text-white max-w-3xl mx-auto" style={{ background: 'linear-gradient(to bottom right, #581c87, #9333ea)' }}>
           <div>
             <h3 className="text-2xl sm:text-3xl font-black mb-4">
-              This is why SafeWays exists.
+              This is why SafeWays exists
             </h3>
             <p className="text-purple-100 text-lg leading-relaxed mb-6">
               SafeWays is not the solution to this problem, only systemic change can be. But while change happens, we want to empower women and anyone who uses our app to walk the world with confidence, knowing their route has been planned with safety in mind, not just speed.
