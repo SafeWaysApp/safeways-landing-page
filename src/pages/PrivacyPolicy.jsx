@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
               <li>Name, email address, and phone number</li>
               <li>Profile information and preferences</li>
-              <li>Emergency contact information (if provided)</li>
+              <li>Emergency contact information</li>
               <li>User-generated content such as safety reports and reviews</li>
             </ul>
 
