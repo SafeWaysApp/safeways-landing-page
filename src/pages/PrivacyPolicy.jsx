@@ -63,7 +63,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <p className="text-gray-700 leading-relaxed mb-12">
+          <p className="text-gray-900 leading-relaxed mb-12">
             Please note that the SafeWays mobile application is currently in prototype stage and is not yet publicly available — only the web version is currently available.
           </p>
 
