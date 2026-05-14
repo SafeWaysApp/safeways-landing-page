@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
+import { useLanguage } from '@/lib/LanguageContext.jsx';
 
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="bg-gray-900 text-white">
       {/* Main Footer */}
@@ -16,7 +18,7 @@ export default function Footer() {
               className="h-20 w-auto mb-6"
             />
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
-              SafeWays is community powered, provides verified safe zones, real-time updates, official safety data, so you can walk the world with confidence.
+              {t('footer_desc')}
             </p>
             <div className="flex gap-4">
               <a href="https://www.instagram.com/safewaysapp?igsh=c2F5NWdrM3Q5ZTlm" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-purple-600 hover:bg-purple-700 rounded-full flex items-center justify-center transition-colors">
@@ -40,14 +42,14 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-4">{t('footer_links')}</h3>
             <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
-              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
-              <li><Link to="/insights" className="text-gray-400 hover:text-white transition-colors">Insights & Stories</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
-              <li><Link to="/open-app" className="text-gray-400 hover:text-white transition-colors">The App</Link></li>
-              <li><Link to={createPageUrl('TermsOfService')} className="text-gray-400 hover:text-white transition-colors">Terms of service</Link></li>
-              <li><Link to={createPageUrl('PrivacyPolicy')} className="text-gray-400 hover:text-white transition-colors">Privacy policy</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">{t('footer_home')}</Link></li>
+              <li><Link to="/insights" className="text-gray-400 hover:text-white transition-colors">{t('footer_insights')}</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">{t('footer_contact')}</Link></li>
+              <li><Link to="/open-app" className="text-gray-400 hover:text-white transition-colors">{t('footer_app')}</Link></li>
+              <li><Link to={createPageUrl('TermsOfService')} className="text-gray-400 hover:text-white transition-colors">{t('footer_terms')}</Link></li>
+              <li><Link to={createPageUrl('PrivacyPolicy')} className="text-gray-400 hover:text-white transition-colors">{t('footer_privacy')}</Link></li>
             </ul>
           </div>
         </div>
@@ -58,7 +60,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="md:flex md:items-center md:justify-between">
             <p className="text-gray-400 text-sm">
-              © 2026 SafeWays. All rights reserved. Making the world safer, one route at a time.
+              {t('footer_copy')}
             </p>
             <div className="mt-4 md:mt-0">
               <div className="flex gap-4 text-sm text-gray-400">
@@ -66,7 +68,7 @@ export default function Footer() {
                   <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Verified & Secure
+                  {t('footer_verified')}
                 </span>
               </div>
             </div>

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useLanguage } from '@/lib/LanguageContext.jsx';
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
+  const { t } = useLanguage();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,13 +24,13 @@ export default function ContactSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h3 className="text-3xl font-black text-gray-900 mb-3">Message sent!</h3>
-            <p className="text-gray-500 text-lg">Thanks for reaching out. We'll get back to you as soon as possible.</p>
+            <h3 className="text-3xl font-black text-gray-900 mb-3">{t('contact_success_title')}</h3>
+            <p className="text-gray-500 text-lg">{t('contact_success_desc')}</p>
             <button
               onClick={() => { setSubmitted(false); setForm({ name: '', email: '', subject: '', message: '' }); }}
               className="mt-8 px-8 py-3 rounded-full text-sm font-bold text-purple-700 border-2 border-purple-200 hover:border-purple-400 transition-colors"
             >
-              Send another message
+              {t('contact_send_another')}
             </button>
           </div>
         ) : (
@@ -41,7 +43,7 @@ export default function ContactSection() {
                 </svg>
               </div>
               <div>
-                <p className="font-bold text-gray-900">Send us a message</p>
+                <p className="font-bold text-gray-900">{t('contact_send')}</p>
 
               </div>
             </div>
@@ -50,7 +52,7 @@ export default function ContactSection() {
             <form onSubmit={handleSubmit} className="px-8 py-8 space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Your name</label>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">{t('contact_name')}</label>
                   <input
                     type="text"
                     required
@@ -61,7 +63,7 @@ export default function ContactSection() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Email address</label>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">{t('contact_email')}</label>
                   <input
                     type="email"
                     required
@@ -74,24 +76,24 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">{t('contact_subject')}</label>
                 <input
                   type="text"
                   value={form.subject}
                   onChange={e => setForm({ ...form, subject: e.target.value })}
-                  placeholder="What's this about?"
+                  placeholder={t('contact_subject_placeholder')}
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent bg-gray-50 transition"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">{t('contact_message')}</label>
                 <textarea
                   required
                   rows={6}
                   value={form.message}
                   onChange={e => setForm({ ...form, message: e.target.value })}
-                  placeholder="Tell us how we can help..."
+                  placeholder={t('contact_message_placeholder')}
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent bg-gray-50 transition resize-none"
                 />
               </div>
@@ -101,7 +103,7 @@ export default function ContactSection() {
                 className="w-full text-white font-bold py-4 rounded-xl transition-all hover:opacity-90 hover:shadow-lg text-lg"
                 style={{ background: 'linear-gradient(to right, #581c87, #9333ea)' }}
               >
-                Send →
+                {t('contact_submit')}
               </button>
             </form>
           </div>
@@ -112,7 +114,7 @@ export default function ContactSection() {
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
           </svg>
-          <span>Or visit our safety portal at</span>
+          <span>{t('contact_portal')}</span>
           <a href="https://app.safeways.io" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 font-medium">app.safeways.io</a>
         </div>
 

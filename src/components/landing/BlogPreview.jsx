@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
+import { useLanguage } from '@/lib/LanguageContext.jsx';
 
 const posts = [
   {
@@ -30,6 +31,7 @@ const posts = [
 ];
 
 export default function BlogPreview() {
+  const { t } = useLanguage();
   return (
     <div className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,20 +39,19 @@ export default function BlogPreview() {
         <div className="flex items-end justify-between mb-12">
           <div>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
-              Insights & Stories
+              {t('blog_heading')}
             </h2>
           </div>
-
         </div>
 
         {/* Empty State */}
         <div className="text-center py-16 bg-white rounded-2xl border border-gray-100 shadow-sm">
           <div className="text-5xl mb-6">✍️</div>
-          <p className="text-xl text-gray-600 mb-2">We don't have any publications yet.</p>
+          <p className="text-xl text-gray-600 mb-2">{t('blog_empty')}</p>
           <p className="text-gray-500">
-            Would you like to write a blog for us?{' '}
+            {t('blog_cta')}{' '}
             <Link to="/contact" className="text-purple-700 font-semibold hover:text-purple-900 underline transition-colors">
-              Get in touch via our contact form
+              {t('blog_cta_link')}
             </Link>
             .
           </p>
