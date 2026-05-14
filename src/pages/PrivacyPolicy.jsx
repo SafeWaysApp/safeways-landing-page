@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Information we collect</h2>
             
-            <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">2.1 Personal information</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">Personal information</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
               We collect information that you provide directly to us, including:
             </p>
@@ -47,7 +47,7 @@ export default function PrivacyPolicy() {
               Personal information is collected only when you directly provide it to the app. You can update or remove this information at any time you choose to do so.
             </p>
 
-            <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">2.2 Location data</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">Location data</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
               SafeWays collects real-time location data to provide core safety features, including:
             </p>
