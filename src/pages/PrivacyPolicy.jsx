@@ -63,9 +63,11 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <p className="text-gray-900 leading-relaxed mb-12">
-            Please note that the SafeWays mobile application is currently in prototype stage and is not yet publicly available — only the web version is currently available.
-          </p>
+          <div className="bg-purple-50 border-l-4 border-purple-600 px-6 py-4 rounded-r-lg mb-12">
+            <p className="text-gray-900 font-semibold leading-relaxed">
+              Please note that the SafeWays mobile application is currently in prototype stage and is not yet publicly available — only the web version is currently available.
+            </p>
+          </div>
 
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">2. How we use your information</h2>
