@@ -43,7 +43,7 @@ export default function Purpose() {
             That's what we believe. But we also know that's not the reality for everyone, and particularly not for women.
           </p>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Fear of harassment and violence restricts millions of women's freedom every day, limiting access to work, education, and leisure. This is not a personal failing. It is an unacceptable systemic reality. We have normalised a totally abnormal experience, and it needs to change.
+            Fear of street harassment and violence restricts millions of women's freedom every day, limiting access to work, education, and leisure. This is not a personal failing. It is an unacceptable systemic reality. We have normalised a totally abnormal experience, and it needs to change.
           </p>
         </div>
           <div className="hidden lg:flex items-center justify-center flex-shrink-0">
