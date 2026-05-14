@@ -43,6 +43,9 @@ export default function PrivacyPolicy() {
               <li>Emergency contact information</li>
               <li>User-generated content such as safety reports and reviews</li>
             </ul>
+            <p className="text-gray-700 leading-relaxed mt-4">
+              Personal information is collected only when you directly provide it to the app. You can update or remove this information at any time you choose to do so.
+            </p>
 
             <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">2.2 Location data</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
