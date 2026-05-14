@@ -4,8 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'Insights & Stories', path: '/insights' },
-  { label: 'Contact Us', path: '/contact' },
   { label: 'Privacy Policy', path: '/PrivacyPolicy' },
+  { label: 'Contact Us', path: '/contact' },
 ];
 
 export default function Navbar() {
