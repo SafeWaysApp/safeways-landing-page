@@ -5,6 +5,7 @@ const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'Insights & Stories', path: '/insights' },
   { label: 'Contact Us', path: '/contact' },
+  { label: 'Privacy Policy', path: '/PrivacyPolicy' },
 ];
 
 export default function Navbar() {
