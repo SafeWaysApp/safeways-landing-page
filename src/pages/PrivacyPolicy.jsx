@@ -64,7 +64,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <p className="text-gray-700 leading-relaxed mb-12">
-            Please note that the SafeWays mobile application is currently in prototype stage and is not yet publicly available.
+            Please note that the SafeWays mobile application is currently in prototype stage and is not yet publicly available — only the web version is currently available.
           </p>
 
           <section className="mb-12">
@@ -91,7 +91,7 @@ export default function PrivacyPolicy() {
               These cookies are outside of SafeWays' control and are solely managed by Base44.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Please note that the SafeWays mobile application is currently in prototype stage and is not yet publicly available.
+              Please note that the SafeWays mobile application is currently in prototype stage and is not yet publicly available — only the web version is currently available.
             </p>
           </section>
 
