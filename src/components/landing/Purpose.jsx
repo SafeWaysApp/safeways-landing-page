@@ -2,6 +2,12 @@ import React from 'react';
 
 const stats = [
   {
+    figure: '60%',
+    description: 'of women feel unsafe walking alone at night.',
+    source: 'UN Women, 2021',
+    sourceUrl: 'https://www.unwomen.org/en/news/stories/2021/9/feature-making-cities-and-public-spaces-safe-for-women-and-girls'
+  },
+  {
     figure: '1 in 3',
     description: 'women in the EU have experienced physical violence, sexual violence, or threats in their adulthood.',
     source: 'EU Gender-Based Violence Survey, 2024',
@@ -18,12 +24,6 @@ const stats = [
     description: 'women who experienced violence reported the incident to the police.',
     source: 'EU Gender-Based Violence Survey, 2024',
     sourceUrl: 'https://fra.europa.eu/en/publication/2024/gender-based-violence-survey-2024'
-  },
-  {
-    figure: '60%',
-    description: 'of women feel unsafe walking alone at night.',
-    source: 'UN Women, 2021',
-    sourceUrl: 'https://www.unwomen.org/en/news/stories/2021/9/feature-making-cities-and-public-spaces-safe-for-women-and-girls'
   },
 ];
 
