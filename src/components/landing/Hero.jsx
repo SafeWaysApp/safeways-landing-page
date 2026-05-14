@@ -78,7 +78,7 @@ export default function Hero() {
             {/* CTAs */}
             <div className="mb-5">
               <p className="text-2xl font-bold text-white leading-snug">
-                Walk your city with confidence.<br className="hidden sm:block" /> Try SafeWays today.
+                Walk the world with confidence.<br className="hidden sm:block" /> Try SafeWays today.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-6 mb-2">
