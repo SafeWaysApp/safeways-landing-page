@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
               <li>Name, email address, and phone number</li>
               <li>Profile information and preferences</li>
               <li>Emergency contact information</li>
-              <li>User-generated content such as safety reports and reviews</li>
+              <li>User-generated content such as safety reports and reviews.</li>
             </ul>
             <p className="text-gray-700 leading-relaxed mt-4">
               Personal information is collected only when you directly provide it to the app. You can update or remove this information at any time you choose to do so.
@@ -55,7 +55,7 @@ export default function PrivacyPolicy() {
               <li>Safe route recommendations</li>
               <li>Real-time safety alerts for your area</li>
               <li>Emergency assistance services</li>
-              <li>Location-based safety zone information</li>
+              <li>Location-based safety zone information.</li>
             </ul>
             <p className="text-gray-700 leading-relaxed">
               Location data is only collected when you use the app and have granted location permissions. 
