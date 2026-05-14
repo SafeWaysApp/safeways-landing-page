@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
               <li>To respond to your requests and provide customer support</li>
               <li>To analyze usage patterns and improve app functionality</li>
               <li>To detect, prevent, and address technical issues and security threats</li>
-              <li>To comply with legal obligations and enforce our terms</li>
+              <li>To comply with legal obligations and enforce our terms.</li>
             </ul>
           </section>
 
