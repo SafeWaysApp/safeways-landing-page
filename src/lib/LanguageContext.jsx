@@ -177,9 +177,9 @@ const translations = {
     nav_app: 'Abrir App',
 
     // Hero
-    hero_subtitle: 'Inteligencia de seguridad en tiempo real para todos. Navega tu ciudad con confianza usando datos de la comunidad.',
-    hero_signal1_label: 'Impulsado por la comunidad',
-    hero_signal1_tip: 'Datos de seguridad aportados y verificados por miles de usuarios reales en tu ciudad.',
+    hero_subtitle: 'Inteligencia de seguridad en tiempo real para todos. Navega tu ciudad con confianza usando la información proporcionada por usuarios en tu ciudad.',
+    hero_signal1_label: 'Impulsado por usuarios en tu ciudad',
+    hero_signal1_tip: 'Datos de seguridad aportados y verificados por usuarios reales en tu ciudad.',
     hero_signal2_label: 'Verificado y confiable',
     hero_signal2_tip: 'Todos los informes se contrastan con fuentes oficiales y validación comunitaria.',
     hero_signal3_label: 'Alertas en tiempo real',
