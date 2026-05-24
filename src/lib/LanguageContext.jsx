@@ -212,7 +212,7 @@ const translations = {
     stat3_desc: 'mujeres en la UE han experimentado violencia sexual, incluida la violación, en su vida adulta.',
     stat4_desc: 'mujeres que experimentaron violencia denunciaron el incidente a la policía.',
     purpose_cta_title: 'Por eso existe SafeWays',
-    purpose_cta_p1: 'SafeWays no es la solución a este problema, solo el cambio sistémico puede serlo. Pero mientras ese cambio ocurre, queremos empoderar a las mujeres y a quienes usen nuestra app para caminar por el mundo con confianza, sabiendo que su ruta ha sido planificada pensando en la seguridad, no solo en la velocidad.',
+    purpose_cta_p1: 'SafeWays no es la solución a este problema, solo el cambio sistémico puede serlo. Pero mientras ese cambio ocurre, queremos empoderar a las mujeres y a quienes usen nuestra app a caminar por el mundo con confianza, sabiendo que su ruta ha sido planificada pensando en la seguridad, no solo en la velocidad.',
     purpose_cta_p2: 'Porque todos deberían disfrutar del mundo libremente, y hasta que esto sea una realidad, haremos nuestro mejor esfuerzo para ayudarte a tomar decisiones informadas sobre tu ruta.',
 
     // Features
