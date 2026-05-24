@@ -3,25 +3,25 @@ import { useLanguage } from '@/lib/LanguageContext.jsx';
 
 const statsData = [
   {
-    figure: '60%',
+    figureKey: 'stat1_figure',
     descKey: 'stat1_desc',
     source: 'UN Women, 2021',
     sourceUrl: 'https://www.unwomen.org/en/news/stories/2021/9/feature-making-cities-and-public-spaces-safe-for-women-and-girls'
   },
   {
-    figure: '1 in 3',
+    figureKey: 'stat2_figure',
     descKey: 'stat2_desc',
     source: 'EU Gender-Based Violence Survey, 2024',
     sourceUrl: 'https://fra.europa.eu/en/publication/2024/gender-based-violence-survey-2024'
   },
   {
-    figure: '1 in 6',
+    figureKey: 'stat3_figure',
     descKey: 'stat3_desc',
     source: 'EU Gender-Based Violence Survey, 2024',
     sourceUrl: 'https://fra.europa.eu/en/publication/2024/gender-based-violence-survey-2024'
   },
   {
-    figure: 'Only 1 in 8',
+    figureKey: 'stat4_figure',
     descKey: 'stat4_desc',
     source: 'EU Gender-Based Violence Survey, 2024',
     sourceUrl: 'https://fra.europa.eu/en/publication/2024/gender-based-violence-survey-2024'
@@ -64,7 +64,7 @@ export default function Purpose() {
               key={i}
               className="rounded-2xl p-6 border-2 border-purple-100 bg-purple-50 flex flex-col gap-3"
             >
-              <div className="text-4xl font-black text-purple-700">{stat.figure}</div>
+              <div className="text-4xl font-black text-purple-700">{t(stat.figureKey)}</div>
               <p className="text-gray-700 text-sm leading-relaxed flex-1">{t(stat.descKey)}</p>
               <a
                 href={stat.sourceUrl}
