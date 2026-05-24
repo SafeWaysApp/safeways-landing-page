@@ -196,7 +196,7 @@ const translations = {
 
     // Purpose
     purpose_label: 'Nuestro Propósito',
-    purpose_heading: 'Todos deberían caminar por el mundo con confianza',
+    purpose_heading: 'Tod@s deberíamos caminar por el mundo con confianza',
     purpose_p1: 'Eso es lo que creemos. Pero también sabemos que esa no es la realidad para todos, y particularmente no para las mujeres.',
     purpose_p2: 'El miedo al acoso callejero y la violencia restringe la libertad de millones de mujeres cada día, limitando el acceso al trabajo, la educación y el ocio. Esto no es un fallo personal. Es una realidad sistémica inaceptable. Hemos normalizado una experiencia totalmente anormal, y eso necesita cambiar.',
     stat1_desc: 'de las mujeres se sienten inseguras caminando solas de noche.',
