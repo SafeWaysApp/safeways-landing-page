@@ -175,7 +175,7 @@ const translations = {
   es: {
     // Navbar
     nav_home: 'Inicio',
-    nav_insights: 'Artículos',
+    nav_insights: 'Blog',
     nav_privacy: 'Privacidad',
     nav_contact: 'Contacto',
     nav_app: 'Abrir App',
@@ -232,8 +232,8 @@ const translations = {
     feat6_desc: 'Perspectivas y tendencias detalladas para entender y mejorar la seguridad en tu vecindario.',
 
     // Blog
-    blog_heading: 'Artículos y Relatos',
-    blog_empty: 'Nuevos artículos próximamente.',
+    blog_heading: 'Blog y Relatos',
+    blog_empty: 'Nuevas entradas próximamente.',
     blog_cta: '¿Quieres contribuir o saber más?',
     blog_cta_link: 'Contáctanos',
 
@@ -257,14 +257,14 @@ const translations = {
     contact_page_response: 'Intentamos responder en 5 días hábiles.',
 
     // Insights Page
-    insights_page_title: 'Artículos y Relatos',
+    insights_page_title: 'Blog y Relatos',
     insights_page_subtitle: 'Aprende de nuestra comunidad, descubre consejos de seguridad y mantente informado.',
 
     // Footer
     footer_desc: 'Empoderando comunidades con inteligencia de seguridad en tiempo real.',
     footer_links: 'Enlaces rápidos',
     footer_home: 'Inicio',
-    footer_insights: 'Artículos',
+    footer_insights: 'Blog',
     footer_contact: 'Contacto',
     footer_app: 'Abrir App',
     footer_terms: 'Términos de servicio',
