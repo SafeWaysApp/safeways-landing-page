@@ -14,11 +14,15 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const langRef = useRef(null);
+  const desktopLangRef = useRef(null);
+  const mobileLangRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (langRef.current && !langRef.current.contains(e.target)) setLangOpen(false);
+      if (
+        desktopLangRef.current && !desktopLangRef.current.contains(e.target) &&
+        mobileLangRef.current && !mobileLangRef.current.contains(e.target)
+      ) setLangOpen(false);
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
@@ -77,7 +81,7 @@ export default function Navbar() {
               {t('nav_app')}
             </a>
             {/* Language Switcher */}
-            <div className="relative" ref={langRef}>
+            <div className="relative" ref={desktopLangRef}>
               <button
                 onClick={() => setLangOpen(!langOpen)}
                 className="flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white rounded-full px-3 py-1.5 transition-colors"
@@ -102,7 +106,7 @@ export default function Navbar() {
 
           {/* Mobile: Language + Hamburger */}
           <div className="md:hidden flex items-center gap-2">
-            <div className="relative" ref={langRef}>
+            <div className="relative" ref={mobileLangRef}>
               <button
                 onClick={() => setLangOpen(!langOpen)}
                 className="flex items-center gap-1 bg-white/20 hover:bg-white/30 text-white rounded-full px-2.5 py-1.5 transition-colors"
