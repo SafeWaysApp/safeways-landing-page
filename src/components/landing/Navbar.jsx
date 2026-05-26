@@ -1,17 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '@/lib/LanguageContext.jsx';
+import { Globe } from 'lucide-react';
 
 
 const LANGUAGES = [
-  { code: 'en', label: 'EN', flag: '🇬🇧' },
-  { code: 'es', label: 'ES', flag: '🇪🇸' },
-  { code: 'pl', label: 'PL', flag: '🇵🇱' },
+  { code: 'en', label: 'English' },
+  { code: 'es', label: 'Español' },
+  { code: 'pl', label: 'Polski' },
 ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const langRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (langRef.current && !langRef.current.contains(e.target)) setLangOpen(false);
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
   const location = useLocation();
   const { language, setLanguage, t } = useLanguage();
 
@@ -66,31 +77,51 @@ export default function Navbar() {
               {t('nav_app')}
             </a>
             {/* Language Switcher */}
-            <div className="flex items-center gap-1 bg-white/20 rounded-full px-2 py-1">
-              {LANGUAGES.map(({ code, label, flag }) => (
-                <button
-                  key={code}
-                  onClick={() => setLanguage(code)}
-                  className={`text-xs font-bold px-2 py-0.5 rounded-full transition-all ${language === code ? 'bg-white text-purple-800' : 'text-white/80 hover:text-white'}`}
-                >
-                  {flag} {label}
-                </button>
-              ))}
+            <div className="relative" ref={langRef}>
+              <button
+                onClick={() => setLangOpen(!langOpen)}
+                className="flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white rounded-full px-3 py-1.5 transition-colors"
+              >
+                <Globe className="w-4 h-4" />
+              </button>
+              {langOpen && (
+                <div className="absolute right-0 mt-2 w-36 bg-white rounded-xl shadow-lg py-1 z-50 border border-gray-100">
+                  {LANGUAGES.map(({ code, label }) => (
+                    <button
+                      key={code}
+                      onClick={() => { setLanguage(code); setLangOpen(false); }}
+                      className={`w-full text-left px-4 py-2 text-sm font-medium transition-colors ${language === code ? 'text-purple-700 bg-purple-50' : 'text-gray-700 hover:bg-gray-50'}`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
 
           {/* Mobile: Language + Hamburger */}
           <div className="md:hidden flex items-center gap-2">
-            <div className="flex items-center gap-0.5 bg-white/20 rounded-full px-1.5 py-0.5">
-              {LANGUAGES.map(({ code, label }) => (
-                <button
-                  key={code}
-                  onClick={() => setLanguage(code)}
-                  className={`text-xs font-bold px-1.5 py-0.5 rounded-full transition-all ${language === code ? 'bg-white text-purple-800' : 'text-white/80 hover:text-white'}`}
-                >
-                  {label}
-                </button>
-              ))}
+            <div className="relative" ref={langRef}>
+              <button
+                onClick={() => setLangOpen(!langOpen)}
+                className="flex items-center gap-1 bg-white/20 hover:bg-white/30 text-white rounded-full px-2.5 py-1.5 transition-colors"
+              >
+                <Globe className="w-4 h-4" />
+              </button>
+              {langOpen && (
+                <div className="absolute right-0 mt-2 w-36 bg-white rounded-xl shadow-lg py-1 z-50 border border-gray-100">
+                  {LANGUAGES.map(({ code, label }) => (
+                    <button
+                      key={code}
+                      onClick={() => { setLanguage(code); setLangOpen(false); }}
+                      className={`w-full text-left px-4 py-2 text-sm font-medium transition-colors ${language === code ? 'text-purple-700 bg-purple-50' : 'text-gray-700 hover:bg-gray-50'}`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
             <button
               className="p-2 rounded-lg text-white transition-colors"
