@@ -9,6 +9,24 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex justify-between items-start mb-8">
+          <div></div>
+          <a
+            href="https://www.tomtom.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
+          >
+            <span className="text-gray-400 text-sm italic font-medium">Powered by</span>
+            <div className="bg-white rounded-lg px-2 py-1">
+              <img
+                src="https://media.base44.com/images/public/698bc57975eb60d9d1b511a2/cc5b5674f_image.png"
+                alt="TomTom"
+                className="h-5 w-auto"
+              />
+            </div>
+          </a>
+        </div>
         <div className="grid md:grid-cols-2 gap-12">
           {/* Brand */}
           <div>
