@@ -153,7 +153,7 @@ export default function Hero() {
                 >
                   <span className="text-white/70 text-base italic font-medium tracking-wide">Powered by</span>
                   <img
-                    src="https://media.base44.com/images/public/698bc57975eb60d9d1b511a2/e7f4b1370_image.png"
+                    src="https://media.base44.com/images/public/698bc57975eb60d9d1b511a2/ee7b821eb_image.png"
                     alt="TomTom"
                     className="h-6 w-auto"
                   />
