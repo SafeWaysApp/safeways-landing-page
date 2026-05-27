@@ -143,17 +143,17 @@ export default function Hero() {
           {/* Right: Visual */}
           <div className="relative lg:block hidden">
             <div className="relative z-10">
-              {/* Powered by TomTom badge */}
+              {/* Powered by TomTom */}
               <div className="flex justify-center mb-4">
                 <a
                   href="https://www.tomtom.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 transition-colors"
+                  className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
-                  <span className="text-white/70 text-xs font-medium tracking-wide">Powered by</span>
+                  <span className="text-white/70 text-base italic font-medium tracking-wide">Powered by</span>
                   <span
-                    className="text-white font-black text-sm tracking-tight"
+                    className="text-white font-black text-base tracking-tight"
                     style={{ fontFamily: "'Nunito', 'Nunito Sans', sans-serif", letterSpacing: '-0.02em' }}
                   >
                     TomTom
