@@ -166,11 +166,11 @@ export default function Hero() {
                 </a>
               </div>
               <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-2xl">
-                <div className="aspect-[9/16] rounded-2xl overflow-hidden">
+                <div className="rounded-2xl overflow-hidden">
                   <img 
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698bc57975eb60d9d1b511a2/56f9314a9_image.png" 
-                    alt="SafeWays App Screenshot"
-                    className="w-full h-full object-cover"
+                    src="https://media.base44.com/images/public/698bc57975eb60d9d1b511a2/ec8c6067d_safeways_animation.gif" 
+                    alt="SafeWays App"
+                    className="w-full h-auto"
                   />
                 </div>
               </div>
