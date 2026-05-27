@@ -152,14 +152,14 @@ export default function Hero() {
                   className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
                   <span className="text-white/70 text-base italic font-medium tracking-wide">Powered by</span>
-                  {/* TomTom icon: red location pin */}
-                  <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0C4.03 0 0 4.03 0 9c0 6.75 9 13 9 13s9-6.25 9-13c0-4.97-4.03-9-9-9z" fill="#DF1B12"/>
-                    <circle cx="9" cy="9" r="3.5" fill="white"/>
+                  {/* TomTom logo: matches tomtom.com — teardrop pin + wordmark */}
+                  <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 0C4.477 0 0 4.477 0 10c0 4.01 2.37 7.47 5.8 9.07L10 24l4.2-4.93C17.63 17.47 20 14.01 20 10 20 4.477 15.523 0 10 0z" fill="#DF1B12"/>
+                    <circle cx="10" cy="10" r="4.5" fill="white"/>
                   </svg>
                   <span
-                    className="text-white font-bold text-base"
-                    style={{ fontFamily: "'Arial', sans-serif", letterSpacing: '0' }}
+                    className="text-white font-bold text-lg tracking-tight"
+                    style={{ fontFamily: "'Arial', sans-serif" }}
                   >
                     tomtom
                   </span>
