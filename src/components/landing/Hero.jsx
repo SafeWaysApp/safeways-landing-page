@@ -152,17 +152,11 @@ export default function Hero() {
                   className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
                   <span className="text-white/70 text-base italic font-medium tracking-wide">Powered by</span>
-                  {/* TomTom logo: matches tomtom.com — teardrop pin + wordmark */}
-                  <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 0C4.477 0 0 4.477 0 10c0 4.01 2.37 7.47 5.8 9.07L10 24l4.2-4.93C17.63 17.47 20 14.01 20 10 20 4.477 15.523 0 10 0z" fill="#DF1B12"/>
-                    <circle cx="10" cy="10" r="4.5" fill="white"/>
-                  </svg>
-                  <span
-                    className="text-white font-bold text-lg tracking-tight"
-                    style={{ fontFamily: "'Arial', sans-serif" }}
-                  >
-                    tomtom
-                  </span>
+                  <img
+                    src="https://media.base44.com/images/public/698bc57975eb60d9d1b511a2/600e9ae17_image.png"
+                    alt="TomTom"
+                    className="h-6 w-auto brightness-0 invert"
+                  />
                 </a>
               </div>
               <div className="flex justify-center">
