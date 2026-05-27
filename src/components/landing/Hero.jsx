@@ -152,11 +152,13 @@ export default function Hero() {
                   className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
                   <span className="text-white/70 text-base italic font-medium tracking-wide">Powered by</span>
-                  <img
-                    src="https://media.base44.com/images/public/698bc57975eb60d9d1b511a2/ee7b821eb_image.png"
-                    alt="TomTom"
-                    className="h-6 w-auto"
-                  />
+                  <div className="bg-white rounded-lg px-2 py-1">
+                    <img
+                      src="https://media.base44.com/images/public/698bc57975eb60d9d1b511a2/cc5b5674f_image.png"
+                      alt="TomTom"
+                      className="h-5 w-auto"
+                    />
+                  </div>
                 </a>
               </div>
               <div className="flex justify-center">
