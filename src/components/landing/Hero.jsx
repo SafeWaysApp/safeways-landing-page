@@ -143,6 +143,23 @@ export default function Hero() {
           {/* Right: Visual */}
           <div className="relative lg:block hidden">
             <div className="relative z-10">
+              {/* Powered by TomTom badge */}
+              <div className="flex justify-center mb-4">
+                <a
+                  href="https://www.tomtom.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 transition-colors"
+                >
+                  <span className="text-white/70 text-xs font-medium tracking-wide">Powered by</span>
+                  <span
+                    className="text-white font-black text-sm tracking-tight"
+                    style={{ fontFamily: "'Nunito', 'Nunito Sans', sans-serif", letterSpacing: '-0.02em' }}
+                  >
+                    TomTom
+                  </span>
+                </a>
+              </div>
               <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-2xl">
                 <div className="aspect-[9/16] rounded-2xl overflow-hidden">
                   <img 
