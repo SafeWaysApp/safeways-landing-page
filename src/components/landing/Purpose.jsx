@@ -72,7 +72,7 @@ export default function Purpose() {
                 rel="noopener noreferrer"
                 className="text-xs text-purple-400 hover:text-purple-600 font-medium underline underline-offset-2 transition-colors"
               >
-                {stat.source} ↗
+                {stat.source}
               </a>
             </div>
           ))}
