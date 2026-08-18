@@ -18,8 +18,12 @@ export default function Footer() {
             className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <span className="text-gray-400 text-sm italic font-medium">Powered by</span>
-            <div className="bg-white rounded-lg px-2 py-1">
-              <span className="text-sm font-bold text-slate-800">TomTom</span>
+            <div className="bg-white rounded-lg px-3 py-2">
+              <img
+                src="/tomtom-logo.svg"
+                alt="TomTom"
+                className="h-6 w-auto"
+              />
             </div>
           </a>
         </div>
