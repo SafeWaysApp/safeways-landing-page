@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
 import { useLanguage } from '@/lib/LanguageContext.jsx';
 
 function TrustSignal({ label, tip, icon, open, onToggle }) {
@@ -108,7 +107,7 @@ export default function Hero() {
                 href="https://app.safeways.io"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => base44.analytics.track({ eventName: 'safety_portal_button_clicked' })}
+                onClick={() => undefined}
                 className="inline-flex items-center justify-center gap-3 bg-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-purple-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105 w-full sm:w-48"
               >
                 <svg className="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -129,7 +128,7 @@ export default function Hero() {
                 href="https://docs.google.com/forms/d/1HhG-5HwAcj7TxYJ1qtL0oGYYQsfw7TnO9fO_cXvDWSE/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => base44.analytics.track({ eventName: 'safety_survey_button_clicked' })}
+                onClick={() => undefined}
                 className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white border border-white/40 px-5 py-2.5 rounded-full font-semibold transition-all"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -153,22 +152,16 @@ export default function Hero() {
                 >
                   <span className="text-white/70 text-base italic font-medium tracking-wide">Powered by</span>
                   <div className="bg-white rounded-lg px-2 py-1">
-                    <img
-                      src="https://media.base44.com/images/public/698bc57975eb60d9d1b511a2/cc5b5674f_image.png"
-                      alt="TomTom"
-                      className="h-5 w-auto"
-                    />
+                    <span className="text-sm font-bold text-slate-800">TomTom</span>
                   </div>
                 </a>
               </div>
               <div className="flex justify-center">
                 <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-5 border border-white/20 shadow-2xl w-[65%]">
                   <div className="rounded-2xl overflow-hidden">
-                    <img 
-                      src="https://media.base44.com/images/public/698bc57975eb60d9d1b511a2/ec8c6067d_safeways_animation.gif" 
-                      alt="SafeWays App"
-                      className="w-full h-auto"
-                    />
+                    <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-purple-600 via-fuchsia-500 to-orange-400 flex items-center justify-center shadow-inner">
+                      <span className="text-3xl font-black text-white tracking-wide">SafeWays</span>
+                    </div>
                   </div>
                 </div>
               </div>

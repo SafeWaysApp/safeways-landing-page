@@ -49,11 +49,9 @@ export default function Purpose() {
           </p>
         </div>
           <div className="hidden lg:flex items-center justify-center flex-shrink-0">
-            <img
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698bc57975eb60d9d1b511a2/2ba989b2d_safeway_logo_512.png"
-              alt="SafeWays Logo"
-              className="w-64 h-64 object-contain opacity-90"
-            />
+            <div className="w-64 h-64 rounded-full bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center shadow-lg opacity-90">
+              <span className="text-4xl font-black text-white">SW</span>
+            </div>
           </div>
         </div>
 

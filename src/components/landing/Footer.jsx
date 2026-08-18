@@ -19,22 +19,16 @@ export default function Footer() {
           >
             <span className="text-gray-400 text-sm italic font-medium">Powered by</span>
             <div className="bg-white rounded-lg px-2 py-1">
-              <img
-                src="https://media.base44.com/images/public/698bc57975eb60d9d1b511a2/cc5b5674f_image.png"
-                alt="TomTom"
-                className="h-5 w-auto"
-              />
+              <span className="text-sm font-bold text-slate-800">TomTom</span>
             </div>
           </a>
         </div>
         <div className="grid md:grid-cols-2 gap-12">
           {/* Brand */}
           <div>
-            <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698bc57975eb60d9d1b511a2/2ba989b2d_safeway_logo_512.png" 
-              alt="SafeWays Logo" 
-              className="h-20 w-auto mb-6"
-            />
+            <div className="mb-6">
+              <span className="inline-block text-3xl font-black text-white">SafeWays</span>
+            </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
               {t('footer_desc')}
             </p>

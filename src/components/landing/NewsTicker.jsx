@@ -1,5 +1,4 @@
 import React from 'react';
-import { base44 } from '@/api/base44Client';
 
 export default function NewsTicker() {
   const messages = [
@@ -26,7 +25,7 @@ export default function NewsTicker() {
                       href="https://docs.google.com/forms/d/1HhG-5HwAcj7TxYJ1qtL0oGYYQsfw7TnO9fO_cXvDWSE/viewform"
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => base44.analytics.track({ eventName: 'safety_survey_ticker_clicked' })}
+                      onClick={() => undefined}
                       className="underline font-bold text-orange-300 hover:text-orange-200"
                     >
                       Safety Survey

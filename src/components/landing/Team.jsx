@@ -5,14 +5,14 @@ const team = [
     name: 'Valentina Garcia',
     role: 'Chief Executive Officer',
     bio: 'International lawyer with deep expertise in regulatory frameworks and public policy. Valentina leads SafeWays\' global expansion strategy, cultivates strategic partnerships, and shapes the product roadmap to address real-world safety challenges across diverse markets.',
-    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_69415c608ad3b0308b28a1f5/b99b0b4aa_1752622914540.png',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80',
     gradient: 'from-purple-600 to-pink-600'
   },
   {
     name: 'Piotr Buda',
     role: 'Chief Technology Officer',
     bio: 'Seasoned software engineer and AI solutions architect with specialized knowledge in geographic information systems and spatial geometry. Piotr architects SafeWays\' core platform, oversees safety data integrity, and drives innovation in intelligent routing and predictive safety analytics.',
-    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_69415c608ad3b0308b28a1f5/c5270ef2a_WhatsAppImage2026-02-03at130018.jpg',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80',
     gradient: 'from-orange-500 to-yellow-500'
   }
 ];
