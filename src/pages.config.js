@@ -47,6 +47,7 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
+import AccountDeletion from './pages/AccountDeletion';
 import Blog from './pages/Blog';
 import blogTsx from './pages/Blog.tsx';
 import BlogPost from './pages/BlogPost';
@@ -56,6 +57,7 @@ import TermsOfService from './pages/TermsOfService';
 
 
 export const PAGES = {
+    "AccountDeletion": AccountDeletion,
     "Blog": Blog,
     "Blog.tsx": blogTsx,
     "BlogPost": BlogPost,

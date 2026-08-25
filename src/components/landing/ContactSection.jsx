@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 import { useLanguage } from '@/lib/LanguageContext.jsx';
+import { supabase } from '@/lib/supabase.js';
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
   const { t } = useLanguage();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const messageBody = form.subject ? `[${form.subject}] ${form.message}` : form.message;
+    const { error } = await supabase
+      .from('contact_form_messages')
+      .insert({ email: form.email, author: form.name, message: messageBody });
+    if (error) console.error('Failed to save contact form message:', error);
+
     const mailto = `mailto:valentina.garcia@safeways.io,piotr.buda@safeways.io?subject=${encodeURIComponent(form.subject || 'Message from ' + form.name)}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${encodeURIComponent(form.name)} (${encodeURIComponent(form.email)})`;
     window.open(mailto);
     setSubmitted(true);

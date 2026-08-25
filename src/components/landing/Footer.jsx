@@ -66,6 +66,7 @@ export default function Footer() {
               <li><Link to="/open-app" className="text-gray-400 hover:text-white transition-colors">{t('footer_app')}</Link></li>
               <li><Link to={createPageUrl('TermsOfService')} className="text-gray-400 hover:text-white transition-colors">{t('footer_terms')}</Link></li>
               <li><Link to={createPageUrl('PrivacyPolicy')} className="text-gray-400 hover:text-white transition-colors">{t('footer_privacy')}</Link></li>
+              <li><Link to={createPageUrl('AccountDeletion')} className="text-gray-400 hover:text-white transition-colors">{t('footer_deletion')}</Link></li>
             </ul>
           </div>
         </div>
